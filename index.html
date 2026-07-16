@@ -99,8 +99,8 @@
   .btn-outline:hover { background:var(--teal-deep); color:var(--white); }
   .btn-block { display:flex; width:100%; justify-content:center; text-align:center; }
 
-  .utility-bar { background:var(--cream-alt); color:var(--ink-soft); text-align:center; padding:10px 20px; font-family:'Raleway',sans-serif; font-size:13px; letter-spacing:0.03em; border-bottom:1px solid var(--line); }
-  .utility-bar em { font-style:italic; color:var(--teal-deep); }
+  .utility-bar { background:var(--olive-dark); color:#69D3B0; font-weight:700; text-align:center; padding:10px 20px; font-family:'Raleway',sans-serif; font-size:13px; letter-spacing:0.03em; }
+  .utility-bar em { font-style:italic; color:#69D3B0; font-weight:700; }
 
   header { position:sticky; top:0; z-index:30; background:rgba(255,255,255,0.92); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid transparent; transition:border-color .25s ease, box-shadow .25s ease; }
   header.scrolled { border-color:var(--line); box-shadow:var(--shadow-sm); }
@@ -145,6 +145,7 @@
   @media (max-width:880px){ .badge-row{ gap:16px; flex-direction:column; align-items:stretch; } .badge{ margin-bottom:6px; justify-content:center; } }
   @media (max-width:880px){ .badge-row{ justify-content:center; } }
   .badge { display:inline-flex; align-items:center; gap:9px; background:var(--white); border:1px solid var(--line); border-radius:999px; padding:10px 18px; font-family:'Raleway',sans-serif; font-size:13.5px; font-weight:700; color:var(--olive-dark); box-shadow:var(--shadow-sm); }
+  @media (min-width:881px){ .badge{ padding:8px 14px; font-size:12px; gap:6px; } }
   .badge .check { color:var(--teal); font-weight:800; }
 
   .industries-block { margin-top:34px; }
@@ -229,6 +230,8 @@
   .diff-box li::before { content:"✓"; color:#69D3B0; font-weight:800; position:absolute; left:0; }
   .diff-box .foot-note { color:#B9C6B2; font-size:18px; margin:0; }
 
+  .highlight-line { display:inline-block; width:560px; max-width:100%; background:var(--teal-tint); padding:2px 6px; border-radius:4px; font-weight:600; }
+  @media (max-width:640px){ .highlight-line{ width:100%; display:block; } }
   .frustration-grid { max-width:700px; margin:50px auto 0; padding:0; list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:14px 28px; position:relative; z-index:1; }
   @media (max-width:600px){ .frustration-grid{ grid-template-columns:1fr; } }
   .frustration-grid li { font-family:'Lora',Georgia,serif; font-size:19px; font-weight:400; color:#E4EBE0; background:var(--olive-dark); border-radius:12px; padding:19px 20px 19px 46px; box-shadow:var(--shadow-sm); position:relative; text-align:left; }
@@ -331,7 +334,7 @@
   }
 </script>
 
-<div class="utility-bar"><em>Proudly serving</em> Nashville, Brentwood, Franklin, Murfreesboro &amp; the greater Middle Tennessee area.</div>
+<div class="utility-bar"><em>Proudly serving</em> Nashville, Murfreesboro, Lebanon, Columbia &amp; greater Middle TN.</div>
 
 <header id="site-header">
   <div class="wrap">
@@ -541,7 +544,10 @@
   <div class="wrap">
     <div class="section-head reveal">
       <h2><span class="accent-underline">Think of it this way</span></h2>
-      <p style="text-align:left;"><span style="background:var(--teal-tint); padding:2px 6px; border-radius:4px; font-weight:600;">Right now, you can probably name at least one frustration that continues to cost more than the investment required to fix it.</span></p>
+      <p style="text-align:left;">
+        <span class="highlight-line" style="margin-bottom:4px;">Right now, you can probably name at least one frustration</span><br>
+        <span class="highlight-line">that continues to cost more than the investment required to fix it.</span>
+      </p>
     </div>
     <ul class="frustration-grid reveal">
       <li>Customers stop calling back.</li>
