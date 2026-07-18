@@ -12,12 +12,12 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Fieldwise Group | Grow the Business, Not the Chaos</title>
-<meta name="description" content="You grew the business. The systems haven't caught up yet. The Fieldwise Group helps trade and service businesses in Middle Tennessee get their time back.">
+<title>The Fieldwise Group | The Systems Behind Your Success</title>
+<meta name="description" content="You've grown the business, but the systems haven't caught up yet. The Fieldwise Group helps trade businesses in Middle Tennessee focus on what's next.">
 <link rel="canonical" href="https://thefieldwisegroup.com/">
 
-<meta property="og:title" content="The Fieldwise Group | Grow the Business, Not the Chaos">
-<meta property="og:description" content="You grew the business. The systems haven't caught up yet. The Fieldwise Group helps trade and service businesses in Middle Tennessee get their time back.">
+<meta property="og:title" content="The Fieldwise Group | The Systems Behind Your Success">
+<meta property="og:description" content="You've grown the business, but the systems haven't caught up yet. The Fieldwise Group helps trade businesses in Middle Tennessee focus on what's next.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://thefieldwisegroup.com/">
 <meta property="og:site_name" content="The Fieldwise Group">
@@ -32,7 +32,7 @@
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "The Fieldwise Group",
-  "description": "You grew the business. The Fieldwise Group helps the systems catch up, for trade and service businesses in Middle Tennessee.",
+  "description": "You've grown the business, but the systems haven't caught up yet. The Fieldwise Group helps trade businesses focus on what's next.",
   "url": "https://thefieldwisegroup.com/",
   "areaServed": ["Nashville, TN", "Brentwood, TN", "Franklin, TN", "Murfreesboro, TN", "Hendersonville, TN", "Mount Juliet, TN", "Lebanon, TN", "Spring Hill, TN", "Columbia, TN"],
   "address": { "@type": "PostalAddress", "addressLocality": "Nashville", "addressRegion": "TN", "addressCountry": "US" },
@@ -77,8 +77,6 @@
   .reveal { opacity:0; transform:translateY(24px); transition:opacity 0.5s ease, transform 0.5s ease; }
   .reveal.is-visible { opacity:1; transform:translateY(0); }
 
-  .contours { position:absolute; inset:0; z-index:0; pointer-events:none; overflow:hidden; }
-  .contours svg { width:100%; height:100%; }
 
   .accent-underline { position:relative; display:inline-block; }
   .accent-underline::after { content:""; position:absolute; left:3px; right:3px; bottom:-3px; height:6px; background:var(--teal); border-radius:3px; }
@@ -139,25 +137,25 @@
   .hero-copy::before {
     content:"";
     position:absolute;
-    top:-30px; left:-90px;
-    width:960px; height:290px;
-    background:radial-gradient(ellipse at center, var(--olive-dark) 0%, var(--olive-dark) 45%, rgba(27,45,1,0.55) 68%, rgba(27,45,1,0) 88%);
-    border-radius:42% 58% 55% 45% / 52% 46% 54% 48%;
-    filter:blur(26px);
-    transform:translateZ(0);
+    top:-15%; left:-10%;
+    width:120%; height:140%;
+    background-image:
+      radial-gradient(at 50% 20%, rgba(59,100,3,0) 0%, rgba(59,100,3,0.32) 20%, transparent 55%),
+      radial-gradient(at 50% 28%, rgba(59,100,3,0.22) 0px, transparent 45%),
+      radial-gradient(at 50% 50%, var(--cream) 0px, transparent 55%);
+    filter:blur(50px);
     z-index:0;
     pointer-events:none;
   }
   .hero-copy > * { position:relative; z-index:1; }
   @media (max-width:880px){
     .hero{ padding:36px 0 60px; }
-    .hero-copy::before{ width:140%; height:400px; left:-20%; top:-40px; border-radius:50%; filter:blur(28px); }
   }
-  .hero h1 { font-size:clamp(37px,6.8vw,73px); margin-bottom:32px; color:#69D3B0; max-width:66%; padding:8px 4px; line-height:1.08; letter-spacing:-0.02em; }
+  .hero h1 { font-size:clamp(34px,5.6vw,60px); margin-bottom:32px; color:var(--olive-dark); max-width:100%; padding:8px 4px; line-height:1.15; letter-spacing:-0.02em; }
   @media (max-width:880px){ .hero h1{ max-width:100%; font-size:clamp(30px,8vw,44px); margin-bottom:24px; } }
   .hero h1 .line-a { display:block; font-family:'Raleway',sans-serif; font-weight:800; text-transform:uppercase; letter-spacing:-0.02em; margin-bottom:4px; }
-  .hero h1 .line-b { display:block; font-family:'Raleway',sans-serif; font-size:0.58em; font-weight:500; margin-bottom:16px; letter-spacing:-0.01em; }
-  .hero h1 .line-c { display:block; font-family:'Raleway',sans-serif; font-weight:800; font-size:0.78em; letter-spacing:-0.02em; }
+  .hero h1 .line-b { display:block; font-family:'Raleway',sans-serif; font-size:0.5em; font-weight:500; font-style:italic; margin-bottom:18px; letter-spacing:-0.01em; color:var(--ink-soft); line-height:1.3; }
+  .hero h1 .line-c { display:block; font-family:'Raleway',sans-serif; font-weight:800; font-size:0.7em; letter-spacing:-0.02em; }
 
   .hero-divider { width:56px; height:4px; background:var(--teal); border-radius:3px; margin:0 0 32px; }
   @media (max-width:880px){ .hero-divider{ margin:0 auto 24px; } }
@@ -165,20 +163,20 @@
   .hero-list-label { font-family:'Raleway',sans-serif; font-weight:700; font-size:18px; letter-spacing:0.04em; text-transform:uppercase; color:var(--teal-deep); margin:0 0 14px; }
   @media (max-width:640px){ .hero-list-panel{ padding:16px 18px; } }
   .hero-list { list-style:none; padding:0; margin:0; }
-  .hero-list li { font-family:'Raleway',sans-serif; font-size:clamp(19px,2.1vw,21px); font-weight:600; color:var(--olive); position:relative; padding:0 0 0 30px; line-height:1.4; margin-bottom:14px; text-align:left; }
+  .hero-list li { font-family:'Raleway',sans-serif; font-size:clamp(19px,2.1vw,21px); font-weight:400; color:var(--olive); position:relative; padding:0 0 0 30px; line-height:1.4; margin-bottom:14px; text-align:left; }
   .hero-list li:last-child { margin-bottom:0; }
   .hero-list li::before { content:"✓"; color:var(--teal); font-weight:800; position:absolute; left:0; top:2px; }
-  .hero-subhead-body { font-family:'Raleway',sans-serif; font-size:18px; font-weight:600; color:var(--olive-dark); line-height:1.5; margin-top:0; margin-bottom:24px; }
-  .badge-row { display:flex; flex-wrap:wrap; gap:10px; margin-top:0; }
-  .badge { display:inline-flex; align-items:center; gap:8px; background:var(--blue-tint); border:2px solid var(--olive-dark); border-radius:999px; padding:9px 18px; font-family:'Raleway',sans-serif; font-size:15px; font-weight:700; color:var(--teal-deep); }
-  .badge-check { color:#69D3B0; font-weight:800; }
+  .hero-subhead-body { font-family:'Raleway',sans-serif; font-size:18px; font-weight:400; color:var(--olive-dark); line-height:1.5; margin-top:0; margin-bottom:24px; }
+  .badge-row { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:0; }
+  .badge { display:inline-flex; align-items:center; gap:6px; background:var(--blue-tint); border:2px solid var(--olive-dark); border-radius:999px; padding:8px 14px; font-family:'Raleway',sans-serif; font-size:14px; font-weight:700; color:var(--teal-deep); white-space:nowrap; }
+  .badge-check { color:var(--teal); font-weight:800; }
   @media (max-width:640px){ .badge-row{ flex-direction:column; align-items:stretch; } .badge{ justify-content:center; } }
   @media (max-width:880px){ .hero-list{ display:inline-block; text-align:left; } }
 
   .industries-list { list-style:none; padding:0; margin:0 0 28px; display:grid; grid-template-columns:repeat(3, auto); gap:10px 32px; justify-content:start; }
   @media (max-width:700px){ .industries-list{ grid-template-columns:repeat(2, auto); } }
   @media (max-width:460px){ .industries-list{ grid-template-columns:1fr; } }
-  .industries-list li { font-family:'Raleway',sans-serif; font-size:18px; font-weight:600; color:var(--ink); display:flex; align-items:center; gap:10px; white-space:nowrap; }
+  .industries-list li { font-family:'Raleway',sans-serif; font-size:18px; font-weight:400; color:var(--ink); display:flex; align-items:center; gap:10px; white-space:nowrap; }
   .industry-icon { color:var(--teal); font-size:8px; flex-shrink:0; }
 
   section { padding:105px 0; position:relative; }
@@ -186,7 +184,7 @@
   section.on-tint { background:var(--cream-alt); }
   section.on-dark { background:var(--olive-dark); color:#E4EBE0; }
   section.on-teal { background:var(--blue-tint); }
-  section.on-dark h2, section.on-dark h3 { color:#FFFFFF; }
+  section.on-dark h2, section.on-dark h3 { color:#fff; }
   section.on-dark p { color:#B9C6B2; }
   .section-head { text-align:center; max-width:660px; margin:0 auto 64px; position:relative; z-index:1; }
   @media (max-width:640px){ .section-head{ margin-bottom:32px; } }
@@ -322,7 +320,7 @@
   .final-card { background:var(--white); border-radius:26px; box-shadow:var(--shadow-lg); max-width:760px; margin:0 auto; padding:56px 48px; text-align:left; position:relative; z-index:1; }
   @media (max-width:640px){ .final-card{ padding:38px 26px; } }
   .final-card p { text-align:left; color:var(--ink-soft); font-size:17px; }
-  .final-card .lead { font-weight:600; font-family:'Raleway',sans-serif; color:var(--olive-dark); font-size:19px; }
+  .final-card .lead { font-weight:400; font-family:'Raleway',sans-serif; color:var(--olive-dark); font-size:19px; }
   .served-line { text-align:left; padding:44px 32px; background:var(--cream-alt); font-family:'Raleway',sans-serif; font-size:19px; color:var(--ink-soft); border-top:1px solid var(--line); }
   .served-line strong { color:var(--olive); }
 
@@ -388,7 +386,7 @@
 <section class="hero">
   <div class="wrap">
     <div class="hero-copy">
-      <h1><span class="line-a">You've grown the business.</span><span class="line-b">The systems haven't.</span><span class="line-c">Let's get you your time back.</span></h1>
+      <h1><span class="line-a">You've grown the business.</span><span class="line-b">But the systems haven't<br>caught up, yet.</span><span class="line-c">We'll handle it, so you can focus on what's next.</span></h1>
       <div class="hero-divider"></div>
       <div class="hero-list-panel">
         <p class="hero-list-label">Common challenges causing stress:</p>
@@ -491,7 +489,6 @@
 </section>
 
 <section class="on-dark" style="padding-bottom:50px;">
-  <div class="contours" aria-hidden="true" style="opacity:0.15;"></div>
   <div class="wrap">
     <div class="diff-text reveal" style="text-align:left; max-width:700px; margin:0 auto;">
       <h2 style="line-height:1.8;">Most coaches ask questions.<br>Most consultants give advice.<br><span style="color:#69D3B0;">Fieldwise does it for you.</span></h2>
@@ -501,7 +498,6 @@
 </section>
 
 <section class="on-dark" style="padding-bottom:50px;">
-  <div class="contours" aria-hidden="true" style="opacity:0.12;"></div>
   <div class="wrap">
     <div class="transform-grid reveal">
       <div class="transform-col before">
@@ -534,8 +530,8 @@
     <div class="method-block reveal">
       <div class="section-head" style="margin-bottom:44px;">
         <h2 style="font-size:clamp(28px,3.6vw,38px); color:var(--olive);">How We Work</h2>
-        <p style="text-align:left; font-size:19px; font-weight:500; color:var(--ink); margin-bottom:18px;">Our approach draws on Lean Six Sigma and Industrial-Organizational Psychology, the same principles used by leading companies, adapted for growing trade and service businesses.</p>
-        <p style="text-align:left; font-size:19px; font-weight:500; color:var(--ink);">Fieldwise identifies operational opportunities, implements practical improvements, strengthens organizational systems, and creates lasting change. This isn't coaching, a consulting report, or a theoretical strategy session. It's direct, hands-on implementation.</p>
+        <p style="text-align:left; font-size:19px; font-weight:400; color:var(--ink); margin-bottom:18px;">Our approach draws on Lean Six Sigma and Industrial-Organizational Psychology, the same principles used by leading companies, adapted for growing trade and service businesses.</p>
+        <p style="text-align:left; font-size:19px; font-weight:400; color:var(--ink);">Fieldwise identifies operational opportunities, implements practical improvements, strengthens organizational systems, and creates lasting change. This isn't coaching, a consulting report, or a theoretical strategy session. It's direct, hands-on implementation.</p>
       </div>
       <div class="method-steps">
         <div class="method-step">
@@ -792,6 +788,7 @@
   <div class="wrap footer-grid">
     <div>
       <div class="foot-logo"><img src="assets/fieldwise-logo-horizontal-white.svg" alt="The Fieldwise Group"></div>
+      <p class="foot-text">The systems behind successful trade and service businesses in Middle Tennessee.</p>
       <p class="foot-text">We respect your privacy, your time, and your inbox. No spam, ever.</p>
     </div>
     <div>
