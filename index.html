@@ -169,12 +169,14 @@
   .hero-list { list-style:none; padding:0; margin:0; }
   .hero-list li { font-family:'Raleway',sans-serif; font-size:clamp(19px,2.1vw,21px); font-weight:400; color:var(--olive); position:relative; padding:0 0 0 30px; line-height:1.4; margin-bottom:14px; text-align:left; }
   .hero-list li:last-child { margin-bottom:0; }
-  .hero-list li::before { content:"—"; color:var(--teal); font-weight:800; position:absolute; left:0; top:2px; }
+  .hero-list li::before { content:"—"; color:var(--teal); font-weight:800; position:absolute; left:0; top:0.7em; transform:translateY(-50%); }
   .hero-subhead-body { font-family:'Raleway',sans-serif; font-size:18px; font-weight:400; color:var(--olive-dark); line-height:1.5; margin-top:0; margin-bottom:24px; }
   .badge-row { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:0; margin-left:-80px; margin-right:-80px; }
   .badge { display:inline-flex; align-items:center; gap:6px; background:var(--blue-tint); border:2px solid var(--olive-dark); border-radius:999px; padding:8px 14px; font-family:'Raleway',sans-serif; font-size:14px; font-weight:700; color:var(--teal-deep); white-space:nowrap; }
   .badge-check { color:var(--teal); font-weight:800; }
   @media (max-width:640px){ .badge-row{ flex-direction:column; align-items:stretch; margin-left:0; margin-right:0; } .badge{ justify-content:center; } }
+  .badge-row-wide { margin-left:-60px; margin-right:-60px; }
+  @media (max-width:640px){ .badge-row-wide{ margin-left:0; margin-right:0; } }
   @media (max-width:880px){ .hero-list{ display:inline-block; text-align:left; } }
 
   .industries-list { list-style:none; padding:0; margin:0 0 28px; display:grid; grid-template-columns:repeat(3, auto); gap:10px 32px; justify-content:start; }
@@ -325,8 +327,7 @@
   @media (max-width:640px){ .final-card{ padding:38px 26px; } }
   .final-card p { text-align:left; color:var(--ink-soft); font-size:17px; }
   .final-card .lead { font-weight:400; font-family:'Raleway',sans-serif; color:var(--olive-dark); font-size:19px; }
-  .served-line { text-align:left; padding:44px 32px; background:var(--cream-alt); font-family:'Raleway',sans-serif; font-size:19px; color:var(--ink-soft); border-top:1px solid var(--line); }
-  .served-line strong { color:var(--olive); }
+  .served-line { text-align:left; padding:44px 32px; background:var(--cream-alt); font-family:'Raleway',sans-serif; font-size:17px; color:var(--ink-soft); font-style:italic; border-top:1px solid var(--line); }
 
   footer { background:#16220F; color:#C7D4C4; padding:64px 0 36px; }
   .foot-text { font-family:'Raleway',sans-serif; font-size:19px; font-weight:500; line-height:1.7; color:#C7D4C4; margin:0 0 10px; max-width:340px; }
@@ -461,7 +462,7 @@
       <div style="text-align:center; margin-top:30px;">
         <a class="btn btn-primary" href="https://calendly.com/thefieldwisegroup/15min" target="_blank" rel="noopener">Book Your Free 15-Min Answers Call</a>
       </div>
-      <p class="answers-served">Typically serving established trade and service businesses with $1M+ in annual revenue.</p>
+      <p class="answers-served">Typically serving established, growing trade and service businesses with $1M+ in annual revenue.</p>
     </div>
 
   </div>
@@ -774,7 +775,7 @@
     <div class="final-card">
       <h2 style="font-size:clamp(30px,3.8vw,42px); font-weight:800; margin-bottom:22px;">You built this company to create freedom.</h2>
       <p class="lead">The sooner you understand what's really happening inside your business, the sooner you can confidently move it forward.</p>
-      <div class="badge-row" style="margin-top:24px; margin-left:-60px; margin-right:-60px;">
+      <div class="badge-row badge-row-wide" style="margin-top:24px;">
         <span class="badge"><span class="badge-check">✓</span> Done-For-You Implementation</span>
         <span class="badge"><span class="badge-check">✓</span> Built for Busy Owners</span>
         <span class="badge"><span class="badge-check">✓</span> No Endless Strategy Meetings</span>
@@ -790,16 +791,15 @@
 </main>
 
 <div class="served-line">
-  <strong>Businesses Typically Served:</strong> Established trade and service businesses, typically $1M+ in annual revenue.
+  Typically serving established, growing trade and service businesses generating $1M in annual revenue.
 </div>
 
 <footer>
   <div class="wrap footer-grid">
     <div>
-      <h4>The Fieldwise Group</h4>
       <div class="foot-logo"><img src="assets/fieldwise-logo-horizontal-white.svg" alt="The Fieldwise Group"></div>
       <p class="foot-text">The Fieldwise Group, LLC</p>
-      <p class="foot-text">Business operations for established trade and service companies.</p>
+      <p class="foot-text">Business operations for established, growing trade and service companies.</p>
     </div>
     <div>
       <h4>Contact</h4>
@@ -820,7 +820,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p>&copy; <span id="year"></span> The Fieldwise Group, LLC. All rights reserved. &nbsp;&bull;&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+    <p>&copy; <span id="year"></span> The Fieldwise Group, LLC. All rights reserved. &nbsp;&bull;&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;&bull;&nbsp; <a href="terms.html">Terms&nbsp;&amp;&nbsp;Conditions</a></p>
   </div>
 </footer>
 
