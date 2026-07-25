@@ -364,7 +364,8 @@
 
   .pricing-grid { display:flex; flex-direction:column; gap:32px; max-width:680px; margin:0 auto; align-items:stretch; position:relative; z-index:1; }
   @media (min-width:1024px){
-    .pricing-grid { display:grid; grid-template-columns:repeat(3, 1fr); max-width:1100px; align-items:stretch; }
+    .pricing-grid { display:flex; flex-direction:row; gap:32px; max-width:1100px; align-items:stretch; }
+    .plan { flex:1; height:auto; }
   }
   .plan { background:var(--white); border-radius:22px; padding:36px 30px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:transform .2s ease, box-shadow .2s ease; text-align:left; }
   .plan:hover { transform:translateY(-5px); box-shadow:var(--shadow-md); }
@@ -372,7 +373,9 @@
   .plan .step-tag { font-family:'Raleway',sans-serif; font-size:12px; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; color:var(--teal-deep); margin-bottom:10px; }
   .plan h3 { font-size:26px; font-weight:700; margin-bottom:10px; min-height:auto; }
   .plan .plan-sub { font-size:18px; color:var(--ink-soft); margin-bottom:20px; font-style:italic; }
-  .plan .prereq { font-family:'Raleway',sans-serif; font-size:16px; font-weight:700; color:var(--teal-deep); background:rgba(46,139,132,0.09); border-radius:8px; padding:12px 16px; margin-bottom:18px; }
+  .plan-intro { min-height:260px; }
+  @media (max-width:1023px){ .plan-intro { min-height:0; } }
+  .plan .prereq { font-family:'Raleway',sans-serif; font-size:16px; font-weight:700; color:var(--teal-deep); background:rgba(46,139,132,0.09); border-radius:8px; padding:6px 16px; margin-bottom:10px; }
   .plan .price { font-family:'Raleway',sans-serif; font-size:clamp(22px,2.4vw,24px); font-weight:800; color:var(--olive-dark); margin-top:8px; }
   .plan > .btn-block { margin-top:auto; }
   .plan .price.small { font-size:clamp(19px,2.1vw,21px); }
@@ -381,7 +384,7 @@
   .plan ul.includes { list-style:none; padding:0; margin:0 0 24px; font-size:18px; color:var(--ink-soft); }
   .plan ul.includes li { padding:8px 0 8px 28px; position:relative; }
   .plan ul.includes li::before { content:"✓"; color:var(--teal); font-weight:800; position:absolute; left:2px; }
-  .plan .think-box { background:var(--olive-dark); color:#fff; border-radius:14px; padding:24px 24px; margin-bottom:24px; }
+  .plan .think-box { background:var(--olive-dark); color:#fff; border-radius:14px; padding:24px 24px; margin-bottom:24px; min-height:400px; display:flex; flex-direction:column; justify-content:flex-start; }
   .plan .think-box strong { display:block; font-family:'Raleway',sans-serif; color:#69D3B0; font-size:14px; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:10px; }
   .plan .think-box p { color:#E4EBE0; font-size:18px; margin:0; line-height:1.6; }
 
@@ -797,10 +800,12 @@
     <div class="pricing-grid">
 
       <div class="plan reveal">
+        <div class="plan-intro">
         <div class="step-tag">Step 1 &middot; 4 Weeks</div>
         <h3>Immediate Answers Assessment</h3>
         <p class="plan-sub">For established businesses, legally structured, with the basics in place.</p>
-        <p style="font-size:17px; color:var(--ink-soft); margin-bottom:18px;">A thorough review of your business from the perspective of the owner or leadership, the team, and the customer.</p>
+        <p style="font-size:17px; color:var(--ink-soft); margin-bottom:18px;">A thorough review of your business from the owner, team, and customer perspective.</p>
+        </div>
         <div class="think-box"><strong>Think of it this way</strong><p>Correcting just one recurring issue often recovers this investment many times over. You'll walk away with a clear picture of what's working, what's not, and exactly what to prioritize first. That clarity alone is often worth more than the investment itself.</p></div>
         <ul class="includes">
           <li>Quick wins</li>
@@ -817,10 +822,12 @@
       </div>
 
       <div class="plan featured reveal">
+        <div class="plan-intro">
         <div class="step-tag">Step 2 &middot; 90 Days</div>
         <h3>90-Day Operations Overhaul</h3>
         <p class="plan-sub">Where real change happens.</p>
         <p style="font-size:17px; color:var(--ink-soft); margin-bottom:18px;">Instead of being left to figure everything out yourself, implementation begins immediately with the highest-impact improvements.</p>
+        </div>
         <div class="think-box"><strong>Think of it this way</strong><p>You won't be left carrying the implementation. The momentum continues, finally creating the lasting change your business needs. If your business becomes even slightly more efficient, the return on this investment can continue for years.</p></div>
         <ul class="includes">
           <li>Weekly calls</li>
@@ -840,10 +847,12 @@
       </div>
 
       <div class="plan reveal">
+        <div class="plan-intro">
         <div class="step-tag">Step 3 &middot; Monthly</div>
         <h3>Ongoing Operations Leadership</h3>
         <p class="plan-sub">Focus on growing your business while having a trusted partner who already understands your company.</p>
         <div class="prereq">Available once your 90-Day Overhaul is complete.</div>
+        </div>
         <div class="think-box"><strong>Think of it this way</strong><p>As your business grows, what it needs from you changes. Having someone who already understands your business allows improvements to continue without having to start over every time a new challenge appears.</p></div>
         <ul class="includes">
           <li>Move forward with confidence, clarity, and consistency</li>
@@ -883,7 +892,7 @@
       <p>I've spent more than 16 years building businesses and helping other owners build theirs, including founding and scaling a national business and a network of partners and vendors across the country. That experience means understanding how businesses actually function, not just in theory, but in the day-to-day work of leading teams, managing partnerships, and growing at scale.</p>
       <p><span style="background:var(--teal-tint); padding:2px 6px; border-radius:4px; font-weight:600;">Today, I work with trade and service businesses to strengthen the operations behind the work they do best.</span> Every engagement draws on Lean Six Sigma and Industrial-Organizational Psychology: finding the root cause, building what lasts, and creating change people actually adopt.</p>
       <p>I believe every person, regardless of their role, should be empowered to work at the top of their abilities. I don't believe in micromanaging. I believe in clear expectations, practical support, and giving people the opportunity to succeed.</p>
-      <p>Every engagement is built around your business, not a template.</p>
+      <p>Your business is one of a kind, built by you, shaped by your people, and run in a way that's entirely your own. That's exactly where I start, and it's why what we build together will always be about your business, not a formula.</p>
       <p class="about-signoff"><img src="assets/fieldwise-icon.svg" alt="" class="about-icon">Carly Cylinder, Founder</p>
       <p class="about-linkedin"><a href="https://www.linkedin.com/in/carly-cylinder/" target="_blank" rel="noopener">Connect on LinkedIn</a></p>
     </div>
