@@ -12,11 +12,11 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Fieldwise Group | Trade & Service Operations, Middle TN</title>
+<title>Done-For-You Operations | Middle TN | Fieldwise</title>
 <meta name="description" content="You've grown the business, but the way it runs needs to catch up. Fieldwise brings practical, done-for-you operations to trade businesses in Middle Tennessee.">
 <link rel="canonical" href="https://thefieldwisegroup.com/">
 
-<meta property="og:title" content="The Fieldwise Group | Trade & Service Operations, Middle TN">
+<meta property="og:title" content="Done-For-You Operations | Middle TN | Fieldwise">
 <meta property="og:description" content="You've grown the business, but the way it runs needs to catch up. Fieldwise brings practical, done-for-you operations to trade businesses in Middle Tennessee.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://thefieldwisegroup.com/">
@@ -24,7 +24,7 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The Fieldwise Group | Trade & Service Operations, Middle TN">
+<meta name="twitter:title" content="Done-For-You Operations | Middle TN | Fieldwise">
 <meta name="twitter:description" content="You've grown the business, but the way it runs needs to catch up. Fieldwise brings practical, done-for-you operations to trade businesses in Middle Tennessee.">
 <meta name="twitter:image" content="https://thefieldwisegroup.com/assets/og-image.jpg">
 <meta name="robots" content="index, follow">
@@ -376,14 +376,20 @@
   .plan-intro { min-height:260px; }
   @media (max-width:1023px){ .plan-intro { min-height:0; } }
   .plan .prereq { font-family:'Raleway',sans-serif; font-size:16px; font-weight:700; color:var(--teal-deep); background:rgba(46,139,132,0.09); border-radius:8px; padding:6px 16px; margin-bottom:10px; }
-  .plan .price { font-family:'Raleway',sans-serif; font-size:clamp(22px,2.4vw,24px); font-weight:800; color:var(--olive-dark); margin-top:8px; }
+  .plan .price { font-family:'Raleway',sans-serif; font-size:clamp(22px,2.4vw,24px); font-weight:400; color:var(--olive-dark); margin-top:8px; }
   .plan > .btn-block { margin-top:auto; }
   .plan .price.small { font-size:clamp(19px,2.1vw,21px); }
-  .plan .price-note { font-family:'Raleway',sans-serif; font-size:16px; font-weight:500; color:var(--ink-soft); margin-bottom:10px; line-height:1.4; }
+  .plan .price-note { font-family:'Raleway',sans-serif; font-size:16px; font-weight:500; color:var(--ink-soft); margin-bottom:10px; line-height:1.5; background:var(--teal-tint); padding:8px 10px; border-radius:6px; display:inline-block; }
   .plan .timeline { font-family:'Raleway',sans-serif; font-size:16px; font-weight:700; color:var(--olive); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:24px; }
   .plan ul.includes { list-style:none; padding:0; margin:0 0 24px; font-size:18px; color:var(--ink-soft); }
   .plan ul.includes li { padding:8px 0 8px 28px; position:relative; }
   .plan ul.includes li::before { content:"✓"; color:var(--teal); font-weight:800; position:absolute; left:2px; }
+  .plan-toggle { all:unset; display:flex; align-items:center; justify-content:space-between; width:100%; box-sizing:border-box; cursor:pointer; padding:10px 0; margin-bottom:8px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); font-family:'Raleway',sans-serif; font-weight:700; font-size:15px; color:var(--teal-deep); }
+  .plan-toggle-icon { color:var(--teal); font-weight:800; font-size:18px; }
+  .plan-toggle-icon::before { content:"+"; }
+  .plan-toggle[aria-expanded="true"] .plan-toggle-icon::before { content:"\2013"; }
+  .plan-details { display:none; }
+  .plan-details.is-expanded { display:block; }
   .plan .think-box { background:var(--olive-dark); color:#fff; border-radius:14px; padding:24px 24px; margin-bottom:24px; min-height:400px; display:flex; flex-direction:column; justify-content:flex-start; }
   .plan .think-box strong { display:block; font-family:'Raleway',sans-serif; color:#69D3B0; font-size:14px; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:10px; }
   .plan .think-box p { color:#E4EBE0; font-size:18px; margin:0; line-height:1.6; }
@@ -481,7 +487,7 @@
       <h1><span class="line-a">You've grown the business.</span><span class="line-c">Now the way it runs needs to catch up.</span></h1>
       <div class="hero-expert">
         <p class="hero-expert-line">You're an expert at your trade.<br><strong>I'm an expert at making your business run better.</strong></p>
-        <p class="hero-expert-support">Fieldwise takes this off your plate by working alongside your team to make everyone's job easier.</p>
+        <p class="hero-expert-support">Fieldwise fixes the behind-the-scenes for you, so everyone's job gets easier.</p>
       </div>
     </div>
 
@@ -806,6 +812,11 @@
         <p class="plan-sub">For established businesses, legally structured, with the basics in place.</p>
         <p style="font-size:17px; color:var(--ink-soft); margin-bottom:18px;">A thorough review of your business from the owner, team, and customer perspective.</p>
         </div>
+        <button type="button" class="plan-toggle" aria-expanded="false">
+          <span>See what's included</span>
+          <span class="plan-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <div class="plan-details">
         <div class="think-box"><strong>Think of it this way</strong><p>Correcting just one recurring issue often recovers this investment many times over. You'll walk away with a clear picture of what's working, what's not, and exactly what to prioritize first. That clarity alone is often worth more than the investment itself.</p></div>
         <ul class="includes">
           <li>Quick wins</li>
@@ -815,6 +826,7 @@
           <li>Recommended priorities</li>
           <li>Immediate actions</li>
         </ul>
+        </div>
         <div class="price">$5,000&ndash;$8,500</div>
         <div class="price-note">Depending on company size and scope. Less than the cost of one missed opportunity.</div>
         <div class="timeline">Approximately 4 weeks</div>
@@ -828,6 +840,11 @@
         <p class="plan-sub">Where real change happens.</p>
         <p style="font-size:17px; color:var(--ink-soft); margin-bottom:18px;">Instead of being left to figure everything out yourself, implementation begins immediately with the highest-impact improvements.</p>
         </div>
+        <button type="button" class="plan-toggle" aria-expanded="false">
+          <span>See what's included</span>
+          <span class="plan-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <div class="plan-details">
         <div class="think-box"><strong>Think of it this way</strong><p>You won't be left carrying the implementation. The momentum continues, finally creating the lasting change your business needs. If your business becomes even slightly more efficient, the return on this investment can continue for years.</p></div>
         <ul class="includes">
           <li>Weekly calls</li>
@@ -840,6 +857,7 @@
           <li>Referral source improvements</li>
           <li>Business review strategy</li>
         </ul>
+        </div>
         <div class="price">$10,000&ndash;$20,000</div>
         <div class="price-note">Depending on company size and scope. Less than the cost of one employee, for 3 months.</div>
         <div class="timeline">90 days</div>
@@ -853,12 +871,18 @@
         <p class="plan-sub">Focus on growing your business while having a trusted partner who already understands your company.</p>
         <div class="prereq">Available once your 90-Day Overhaul is complete.</div>
         </div>
+        <button type="button" class="plan-toggle" aria-expanded="false">
+          <span>See what's included</span>
+          <span class="plan-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <div class="plan-details">
         <div class="think-box"><strong>Think of it this way</strong><p>As your business grows, what it needs from you changes. Having someone who already understands your business allows improvements to continue without having to start over every time a new challenge appears.</p></div>
         <ul class="includes">
           <li>Move forward with confidence, clarity, and consistency</li>
           <li>Automation &amp; AI options evaluated as your business grows</li>
           <li>For owners beginning to think about their eventual exit, this is also where that conversation naturally starts</li>
         </ul>
+        </div>
         <div class="price small">$3,500&ndash;$12,000<span style="font-size:0.65em; font-weight:600;">/mo</span></div>
         <div class="price-note">Depending on company size and scope of work, from managing the day-to-day to monthly leadership meetings.</div>
         <div class="timeline">Monthly</div>
@@ -1023,6 +1047,16 @@
   });
 
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  var planToggles = document.querySelectorAll('.plan-toggle');
+  planToggles.forEach(function (toggle) {
+    toggle.addEventListener('click', function () {
+      var details = toggle.nextElementSibling;
+      var isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
+      details.classList.toggle('is-expanded', !isExpanded);
+    });
+  });
 
   var pipelineToggles = document.querySelectorAll('.pipeline-toggle');
   pipelineToggles.forEach(function (toggle) {
