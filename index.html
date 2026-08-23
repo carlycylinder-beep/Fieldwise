@@ -28,6 +28,7 @@
 <meta name="twitter:description" content="You've grown the business, but the way it runs needs to catch up. Fieldwise brings research-backed operations to trade businesses in Middle Tennessee.">
 <meta name="twitter:image" content="https://thefieldwisegroup.com/assets/og-image.jpg">
 <meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1B2D01">
 <meta property="og:site_name" content="The Fieldwise Group">
 
 
@@ -42,6 +43,8 @@
   "name": "The Fieldwise Group, LLC",
   "description": "You've grown the business, but the way it runs needs to catch up. Fieldwise brings research-backed operations to trade businesses in Middle Tennessee.",
   "url": "https://thefieldwisegroup.com/",
+  "image": "https://thefieldwisegroup.com/assets/og-image.jpg",
+  "sameAs": ["https://www.linkedin.com/in/carly-cylinder/"],
   "areaServed": ["Nashville, TN", "Brentwood, TN", "Franklin, TN", "Murfreesboro, TN", "Hendersonville, TN", "Mount Juliet, TN", "Lebanon, TN", "Spring Hill, TN", "Columbia, TN"],
   "address": { "@type": "PostalAddress", "streetAddress": "1585 Mallory Ln Suite 104", "addressLocality": "Brentwood", "addressRegion": "TN", "postalCode": "37027-3036", "addressCountry": "US" },
   "makesOffer": [
@@ -75,17 +78,17 @@
     {
       "@type": "Question",
       "name": "Do I need new software?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Probably not. Most businesses already have more software than they need. The issue is usually execution, consistency, communication, or visibility. I'll first determine how to make what you already have work better before recommending anything new." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Probably not. Most businesses already have more software than they need. The issue is usually execution, consistency, communication, or visibility. The first step is determining how to make what you already have work better before recommending anything new." }
     },
     {
       "@type": "Question",
       "name": "Will you implement AI?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Only if it genuinely makes your business easier to operate. AI isn't the starting point. I first focus on creating lasting behavioral change, accountability, and consistency in how things get done. Then I'll determine where technology can genuinely save time." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Only if it genuinely makes your business easier to operate. AI isn't the starting point. The focus starts with creating lasting behavioral change, accountability, and consistency in how things get done. From there, technology gets evaluated for where it can genuinely save time." }
     },
     {
       "@type": "Question",
       "name": "What types of businesses do you work with?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Established trade and service businesses, typically $1M+ in annual revenue, where growth is accelerating and complexity is increasing. That often looks like communication becoming more difficult, consistency getting harder to maintain across crews or locations, or leadership wanting greater visibility before small issues become expensive ones." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Established trade and service businesses, typically $1M-$10M+ in annual revenue, where growth is accelerating and complexity is increasing. That often looks like communication becoming more difficult, consistency getting harder to maintain across crews or locations, or leadership wanting greater visibility before small issues become expensive ones." }
     },
     {
       "@type": "Question",
@@ -106,8 +109,6 @@
     --cream: #FAF7EF;
     --cream-alt: #F2ECDE;
     --white: #FFFFFF;
-    --ink: #26301F;
-    --ink-soft: #4A5443;
     --olive: #3B6403;
     --olive-dark: #1B2D01;
     --teal: #0A714E;
@@ -125,7 +126,7 @@
     html { scroll-behavior: auto; }
     * { animation: none !important; transition: none !important; }
   }
-  body { margin:0; background:var(--cream); color:var(--ink); font-family:'Raleway',sans-serif; line-height:1.85; font-size:18px; overflow-x:hidden; }
+  body { margin:0; background:var(--cream); color:var(--olive-dark); font-family:'Raleway',sans-serif; line-height:1.85; font-size:18px; overflow-x:hidden; }
   h1,h2,h3 { font-family:'Raleway',sans-serif; color:var(--olive-dark); line-height:1.15; margin:0; letter-spacing:-0.01em; }
   p { margin:0 0 20px; }
   a { color:var(--teal-deep); }
@@ -142,35 +143,27 @@
   @media (max-width:640px){ .accent-underline::after{ bottom:-5px; } }
 
 
-  .dash { list-style:none; padding:0; margin:0; }
-  .dash li { position:relative; padding-left:24px; }
-  .dash li::before { content:"\2014"; color:var(--teal); font-weight:800; position:absolute; left:0; }
-  .check-list { list-style:none; padding:0; max-width:520px; margin:0 auto; display:flex; flex-direction:column; gap:18px; }
-  .check-list li { text-align:left; position:relative; padding-left:28px; color:#E4EBE0; font-size:18px; }
-  .check-list.on-light li { color:var(--ink); }
+  .check-list { list-style:none; padding:0; max-width:400px; margin:0 auto; display:flex; flex-direction:column; gap:18px; }
+  .check-list li { display:flex; align-items:flex-start; text-align:left; color:#E4EBE0; font-size:18px; }
+  .check-list li::before { content:"✓"; color:#69D3B0; font-weight:800; margin-right:10px; flex-shrink:0; }
+  .check-list.on-light li { color:var(--olive-dark); }
   .check-list.on-light li::before { color:var(--teal); }
 
-  .check-list li::before { content:"✓"; color:#69D3B0; font-weight:800; position:absolute; left:0; }
 
   .btn { display:inline-flex; align-items:center; justify-content:center; text-align:center; gap:8px; font-family:'Raleway',sans-serif; font-weight:700; font-size:16px; text-decoration:none; border-radius:999px; padding:12px 26px; cursor:pointer; border:1.5px solid transparent; transition:transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease; }
   @media (max-width:640px){ .btn:not(header .btn){ padding:9px 24px; } }
   header .btn { font-size:14px; padding:10px 18px; }
-  @media (max-width:820px){ header .btn{ padding:6px 12px; font-size:12px; line-height:1.25; } }
-  .hero-cta-btn { background:linear-gradient(135deg, var(--teal) 0%, var(--teal-deep) 100%); color:#fff; border:1.5px solid #69D3B0; font-size:15px; line-height:1.4; padding:14px 22px; min-height:44px; }
+  @media (max-width:820px){ header .btn{ padding:6px 12px; font-size:14px; line-height:1.25; } }
+  .hero-cta-btn { background:linear-gradient(135deg, var(--teal) 0%, var(--teal-deep) 100%); color:#fff; border:1.5px solid #69D3B0; font-size:16px; line-height:1.4; padding:14px 22px; min-height:44px; box-shadow:0 0 0 4px rgba(105,211,176,0.18), 0 8px 24px rgba(10,113,78,0.35); }
   @media (max-width:360px){ .hero-cta-btn { padding:11px 16px; } }
   header .btn-primary { background:var(--blue-tint); color:var(--teal-deep); box-shadow:0 2px 10px rgba(10,113,78,0.15); }
   header .btn-primary:hover { background:#C5DCE8; box-shadow:0 2px 14px rgba(10,113,78,0.25); }
   .btn:hover { transform:translateY(-2px); }
-  .btn-primary { background:linear-gradient(135deg, var(--teal) 0%, var(--teal-deep) 100%); color:var(--white); box-shadow:var(--shadow-sm); }
+  .btn-primary { background:linear-gradient(135deg, var(--teal) 0%, var(--teal-deep) 100%); color:var(--white); border:1.5px solid #69D3B0; box-shadow:0 0 0 4px rgba(105,211,176,0.18), 0 8px 24px rgba(10,113,78,0.35); }
   .btn-primary:hover { background:linear-gradient(135deg, var(--teal-deep) 0%, #05432E 100%); box-shadow:var(--shadow-md); }
-  .btn-block { display:flex; width:100%; justify-content:center; text-align:center; border-radius:14px; }
 
   .utility-bar { background:var(--olive-dark); color:#69D3B0; font-weight:700; text-align:center; padding:10px 20px; font-family:'Raleway',sans-serif; font-size:14px; letter-spacing:0.06em; }
-  @media (max-width:640px){ .utility-bar{ padding:7px 16px; font-size:12px; } }
-  .utility-email { color:#E4EBE0; text-decoration:underline; text-decoration-color:#69D3B0; font-weight:600; letter-spacing:0; display:inline-block; padding:11px 2px; margin:-11px 0; }
-  .utility-email:hover { color:#69D3B0; }
-  .utility-divider { opacity:0.5; margin:0 4px; }
-  @media (max-width:700px){ .utility-divider{ display:none; } .utility-email{ display:block; margin-top:4px; } }
+  @media (max-width:640px){ .utility-bar{ padding:7px 16px; font-size:14px; } }
   .utility-bar em { font-style:italic; color:#69D3B0; font-weight:700; }
 
   header { position:sticky; top:0; z-index:30; background-color:var(--olive-dark); border-bottom:1px solid transparent; transition:border-color .25s ease, box-shadow .25s ease; }
@@ -191,7 +184,7 @@
   @media (max-width:820px){ .menu-toggle{ display:flex; } }
   .mobile-menu { display:none; flex-direction:column; background:var(--white); border-top:1px solid var(--line); padding:10px 32px 20px; }
   .mobile-menu.open { display:flex; }
-  .mobile-menu a { padding:12px 0; font-family:'Raleway',sans-serif; font-weight:600; font-size:16px; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line); transition:color .2s ease; }
+  .mobile-menu a { padding:12px 0; font-family:'Raleway',sans-serif; font-weight:600; font-size:16px; color:var(--olive-dark); text-decoration:none; border-bottom:1px solid var(--line); transition:color .2s ease; }
   .mobile-menu a:last-child { border-bottom:none; }
   .mobile-menu a:hover, .mobile-menu a:active { color:var(--olive-dark); }
 
@@ -204,8 +197,8 @@
     content:"";
     position:absolute;
     top:10px; left:-6%;
-    width:68%; aspect-ratio:1.5/1;
-    background:radial-gradient(ellipse at center, rgba(105,211,176,0.48) 0%, rgba(105,211,176,0.2) 45%, transparent 72%);
+    width:50%; aspect-ratio:1.5/1;
+    background:radial-gradient(ellipse at center, rgba(105,211,176,0.55) 0%, rgba(105,211,176,0.22) 45%, transparent 72%);
     z-index:0;
     pointer-events:none;
     animation:blob-breathe 8s ease-in-out infinite;
@@ -214,81 +207,77 @@
     content:"";
     position:absolute;
     bottom:-120px; right:-20%;
-    width:45%; aspect-ratio:1.3/1;
-    background:radial-gradient(ellipse at center, rgba(91,195,247,0.14) 0%, rgba(91,195,247,0.05) 45%, transparent 72%);
+    width:36%; aspect-ratio:1.3/1;
+    background:radial-gradient(ellipse at center, rgba(91,195,247,0.26) 0%, rgba(91,195,247,0.1) 45%, transparent 72%);
     z-index:0;
     pointer-events:none;
     animation:blob-breathe 9s ease-in-out infinite reverse;
   }
   @keyframes blob-breathe {
     0%, 100% { opacity:1; transform:scale(1); }
-    50% { opacity:0.8; transform:scale(1.06); }
+    50% { opacity:0.85; transform:scale(1.1); }
   }
   @media (prefers-reduced-motion: reduce) {
     .hero::before, .hero::after { animation:none; }
   }
-  .hero .wrap { position:relative; z-index:1; display:block; max-width:760px; padding-bottom:88px; }
+  .hero .wrap { position:relative; z-index:1; display:block; max-width:760px; padding-bottom:130px; }
+  @media (max-width:640px){ .hero .wrap{ padding-bottom:100px; } }
+  .hero-fade { position:absolute; left:0; right:0; bottom:0; height:160px; background:linear-gradient(180deg, rgba(15,26,0,0) 0%, rgba(15,26,0,0.65) 65%, #FFFFFF 100%); z-index:2; pointer-events:none; }
+  @media (max-width:640px){ .hero-fade{ height:90px; } }
   @media (max-width:880px){ .hero{ padding:80px 0 0; } }
   @media (max-width:480px){ .hero{ padding:56px 0 0; } }
-  @media (max-width:880px){ .hero .wrap{ padding-bottom:64px; } }
 
-  .hero-eyebrow { font-family:'Raleway',sans-serif; font-weight:800; font-size:14px; letter-spacing:0.14em; text-transform:uppercase; color:#69D3B0; margin:0 0 22px; }
   .hero h1 { font-size:clamp(36px,5.2vw,58px); margin:0; color:var(--white); line-height:1.18; letter-spacing:-0.02em; font-weight:800; }
   .hero-subhead { display:block; font-weight:500; font-style:italic; font-size:0.6em; letter-spacing:-0.01em; color:#B9C6B2; margin-top:14px; line-height:1.4; }
   .hero-rule { width:64px; height:3px; background:#69D3B0; border-radius:2px; margin:32px 0; }
-  .hero-lead { font-family:'Raleway',sans-serif; font-size:20px; font-weight:400; color:#E4EBE0; line-height:1.65; max-width:600px; margin:0 0 44px; }
-  .hero-cta-row { display:flex; }
-  .hero-cta-note { font-family:'Raleway',sans-serif; font-size:14px; color:#B9C6B2; margin:14px 0 0; }
+  .hero-lead { font-family:'Raleway',sans-serif; font-size:21px; font-weight:400; color:#E4EBE0; line-height:1.65; max-width:600px; margin:0 0 28px; }
+  .hero-cta-row { display:flex; margin-bottom:20px; }
+  .hero-cta-note { font-family:'Raleway',sans-serif; font-size:14px; color:#B9C6B2; margin:14px 0 48px; }
 
-  .challenge-fix-grid { display:grid; grid-template-columns:1fr auto 1fr; gap:56px; max-width:920px; margin:0 auto 88px; align-items:start; }
-  @media (max-width:820px){ .challenge-fix-grid{ grid-template-columns:1fr; gap:40px; } }
-  .challenge-fix-divider { width:1px; background:var(--line); align-self:stretch; }
-  @media (max-width:820px){ .challenge-fix-divider{ display:none; } }
-  .challenge-fix-label { font-family:'Raleway',sans-serif; font-weight:800; font-size:14px; letter-spacing:0.1em; text-transform:uppercase; color:var(--teal-deep); margin:0 0 20px; }
+  .challenge-fix-grid { max-width:460px; margin:0 auto; }
+  .challenge-fix-label { font-family:'Raleway',sans-serif; font-weight:800; font-size:clamp(24px,3vw,32px); color:var(--olive-dark); margin:0 0 24px; letter-spacing:-0.01em; }
+  .label-challenge { color:var(--olive-dark); }
+  .label-fix { color:var(--olive-dark); }
   .challenge-list { list-style:none; padding:0; margin:0; }
-  .challenge-list li { font-size:19px; color:var(--ink); line-height:1.6; padding:0 0 0 26px; position:relative; margin-bottom:16px; }
+  .challenge-list li { font-size:18px; font-weight:700; color:var(--olive); line-height:1.6; padding:0 0 0 26px; position:relative; margin-bottom:16px; }
   .challenge-list li:last-child { margin-bottom:0; }
   .challenge-list li::before { content:"\2014"; color:var(--teal); font-weight:800; position:absolute; left:0; }
-  .fix-lead { font-family:'Raleway',sans-serif; font-weight:700; font-size:21px; color:var(--olive-dark); line-height:1.4; margin:0 0 16px; }
-  .fix-text { font-size:19px; color:var(--ink-soft); line-height:1.65; margin:0; }
+  .fix-payoff { font-size:18px; font-weight:700; color:var(--olive); line-height:1.5; margin:16px 0 0; }
 
-  .pullquote-banner { max-width:760px; margin:0 auto; text-align:center; padding:64px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
-  .pullquote-text { font-family:'Raleway',sans-serif; font-weight:500; font-size:clamp(24px,3.4vw,32px); color:var(--olive-dark); line-height:1.5; margin:0 0 28px; }
-  .pullquote-text strong { font-weight:800; color:var(--teal-deep); }
-  .pullquote-link { color:var(--teal-deep); font-family:'Raleway',sans-serif; font-weight:700; font-size:16px; text-decoration:underline; text-decoration-color:var(--teal); text-underline-offset:3px; }
-
-  .badge-row { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:0; margin-left:-80px; margin-right:-80px; }
-  .badge { display:inline-flex; align-items:center; gap:6px; background:var(--blue-tint); border:2px solid var(--olive-dark); border-radius:999px; padding:8px 14px; font-family:'Raleway',sans-serif; font-size:15px; font-weight:700; color:var(--teal-deep); white-space:nowrap; }
-  .badge-check { color:var(--teal); font-weight:800; }
-  @media (max-width:640px){ .badge-row{ flex-direction:column; align-items:stretch; margin-left:0; margin-right:0; } .badge{ justify-content:center; } }
-  @media (min-width:641px) and (max-width:900px){ .badge-row{ margin-left:-20px; margin-right:-20px; } }
-  .badge-row-wide { margin-left:-60px; margin-right:-60px; }
-  @media (max-width:640px){ .badge-row-wide{ margin-left:0; margin-right:0; } }
+  .pullquote-banner { max-width:760px; margin:0 auto; text-align:center; padding:0; position:relative; z-index:1; }
+  section.on-dark .pullquote-text { font-family:'Raleway',sans-serif; font-weight:800; font-size:clamp(30px,3.8vw,42px); color:#E4EBE0; line-height:1.3; letter-spacing:-0.01em; margin:0; }
+  .pullquote-text strong { font-weight:800; color:#69D3B0; text-decoration:underline; text-decoration-color:#69D3B0; text-underline-offset:6px; }
+  .pullquote-text .pq-underline { text-decoration:underline; text-decoration-color:#69D3B0; text-underline-offset:4px; }
+  .pullquote-text .pq-line { color:#E4EBE0; }
 
   .industries-chips { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; max-width:820px; margin:0 auto; position:relative; z-index:1; }
   .industry-chip { display:inline-flex; align-items:center; background:rgba(255,255,255,0.08); border:1.5px solid rgba(105,211,176,0.4); border-radius:999px; padding:11px 20px; font-family:'Raleway',sans-serif; font-size:16px; font-weight:600; color:#E4EBE0; transition:transform .2s ease, background .2s ease; }
+
+  /* Deliverables chips - light background version */
   .industry-chip:hover { transform:translateY(-3px); background:rgba(255,255,255,0.14); }
   .industry-chip.chip-mint { border-color:#69D3B0; background:rgba(105,211,176,0.12); }
   .industry-chip.chip-blue { border-color:#8FC6E8; background:rgba(143,198,232,0.1); }
 
   section { padding:128px 0; position:relative; }
   .section-glow { overflow:hidden; }
-  .section-glow::before { content:""; position:absolute; top:-160px; left:50%; transform:translateX(-50%); width:820px; max-width:140%; aspect-ratio:1.8/1; background:radial-gradient(ellipse at center, rgba(105,211,176,0.32) 0%, rgba(105,211,176,0.13) 45%, transparent 72%); z-index:0; pointer-events:none; }
-  .section-glow.glow-light::before { background:radial-gradient(ellipse at center, rgba(10,113,78,0.16) 0%, rgba(10,113,78,0.06) 45%, transparent 72%); }
+  .section-glow::before { content:""; position:absolute; top:-160px; left:50%; transform:translateX(-50%); width:820px; max-width:140%; aspect-ratio:1.8/1; background:radial-gradient(ellipse at center, rgba(105,211,176,0.4) 0%, rgba(105,211,176,0.16) 45%, transparent 72%); z-index:0; pointer-events:none; }
+  .section-glow.glow-xl::before { width:1000px; max-width:170%; background:radial-gradient(ellipse at center, rgba(105,211,176,0.55) 0%, rgba(105,211,176,0.24) 45%, transparent 72%); }
+  .section-glow.glow-xl::after { content:""; position:absolute; top:-100px; left:auto; right:-15%; width:600px; max-width:120%; aspect-ratio:1.4/1; background:radial-gradient(ellipse at center, rgba(91,195,247,0.4) 0%, rgba(91,195,247,0.16) 45%, transparent 72%); z-index:0; pointer-events:none; }
+  .section-glow.glow-light::before { background:radial-gradient(ellipse at center, rgba(10,113,78,0.22) 0%, rgba(10,113,78,0.08) 45%, transparent 72%); }
   .section-glow.glow-corner::before { top:auto; bottom:-140px; left:auto; right:-10%; transform:none; width:560px; }
-  .section-glow.glow-blue::before { background:radial-gradient(ellipse at center, rgba(91,195,247,0.28) 0%, rgba(91,195,247,0.1) 45%, transparent 72%); }
-  .section-glow.glow-dual::after { content:""; position:absolute; bottom:-140px; right:-12%; width:520px; max-width:110%; aspect-ratio:1.5/1; background:radial-gradient(ellipse at center, rgba(91,195,247,0.22) 0%, rgba(91,195,247,0.08) 45%, transparent 72%); z-index:0; pointer-events:none; }
-  .section-glow.glow-dual-olive::after { content:""; position:absolute; bottom:-120px; right:-14%; width:480px; max-width:110%; aspect-ratio:1.5/1; background:radial-gradient(ellipse at center, rgba(59,100,3,0.18) 0%, rgba(59,100,3,0.06) 45%, transparent 72%); z-index:0; pointer-events:none; }
-  section.on-white { background:linear-gradient(180deg, #FFFFFF 0%, #FCFAF5 100%); }
-  section.on-tint { background:linear-gradient(160deg, var(--cream-alt) 0%, #EDE4CD 100%); }
+  .section-glow.glow-dual::after { content:""; position:absolute; bottom:-140px; right:-12%; width:520px; max-width:110%; aspect-ratio:1.5/1; background:radial-gradient(ellipse at center, rgba(91,195,247,0.3) 0%, rgba(91,195,247,0.12) 45%, transparent 72%); z-index:0; pointer-events:none; }
+  .section-glow.glow-dual-olive::after { content:""; position:absolute; bottom:-120px; right:-14%; width:480px; max-width:110%; aspect-ratio:1.5/1; background:radial-gradient(ellipse at center, rgba(59,100,3,0.26) 0%, rgba(59,100,3,0.1) 45%, transparent 72%); z-index:0; pointer-events:none; }
+  section.on-white { background:linear-gradient(160deg, #FFFFFF 0%, #E8F3EE 55%, #DCEEF5 100%); }
+  section.on-tint { background:linear-gradient(160deg, var(--cream-alt) 0%, #DCEEE0 55%, #CFE6D4 100%); }
+  #method.on-tint { background:linear-gradient(160deg, #F5FBFA 0%, #E4F3F0 50%, #D6EDF2 100%); }
   section.on-dark { background:linear-gradient(160deg, var(--olive-dark) 0%, #0F1A00 100%); color:#E4EBE0; }
-  section.on-teal { background:linear-gradient(160deg, var(--blue-tint) 0%, #C3DCEA 100%); }
+  section.on-teal { background:linear-gradient(160deg, var(--blue-tint) 0%, #A8CFE3 100%); }
   section.on-dark h2, section.on-dark h3 { color:#fff; }
   section.on-dark p { color:#B9C6B2; }
   .section-head { text-align:center; max-width:660px; margin:0 auto 76px; position:relative; z-index:1; }
   @media (max-width:640px){ .section-head{ margin-bottom:32px; } }
   .section-head h2 { font-size:clamp(30px,3.8vw,42px); font-weight:800; }
-  .section-head p { color:var(--ink-soft); margin-top:18px; font-size:18px; }
+  .section-head p { color:var(--olive); margin-top:18px; font-size:18px; }
   @media (max-width:640px){ .section-head p{ margin-top:26px; } }
 
 
@@ -296,27 +285,27 @@
   .diagnosis-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; max-width:780px; margin:0 auto; position:relative; z-index:1; }
   @media (max-width:700px){ .diagnosis-grid{ grid-template-columns:1fr; max-width:460px; } }
   .diagnosis-card { border-radius:18px; overflow:hidden; box-shadow:var(--shadow-md); background:#fff; }
-  .diagnosis-surface { padding:18px 22px; color:var(--ink-soft); font-size:16px; font-weight:600; text-align:center; background:#fff; }
+  .diagnosis-surface { padding:18px 22px; color:var(--olive); font-size:16px; font-weight:600; text-align:center; background:#fff; }
   .diagnosis-divider { display:flex; align-items:center; justify-content:center; gap:8px; padding:2px 0; background:linear-gradient(180deg, #fff 0%, var(--teal-tint) 100%); }
   .diagnosis-divider span { color:var(--teal-deep); font-size:16px; font-weight:800; }
-  .diagnosis-root { padding:24px 22px 28px; text-align:center; background:linear-gradient(160deg, var(--olive-dark) 0%, #0F1A00 100%); }
-  .diagnosis-root { color:#fff; font-size:20px; font-weight:800; }
-  .diagnosis-tag { display:block; font-family:'Raleway',sans-serif; font-size:12px; letter-spacing:0.08em; text-transform:uppercase; font-weight:800; margin-bottom:8px; }
-  .diagnosis-surface .diagnosis-tag { color:var(--ink-soft); opacity:0.8; }
+  .diagnosis-root { padding:24px 22px 28px; text-align:center; background:linear-gradient(160deg, var(--olive-dark) 0%, #0F1A00 100%); color:#fff; font-size:21px; font-weight:800; }
+  .diagnosis-tag { display:block; font-family:'Raleway',sans-serif; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; font-weight:800; margin-bottom:8px; }
+  .diagnosis-surface .diagnosis-tag { color:var(--olive); opacity:0.8; }
   .diagnosis-root .diagnosis-tag { color:#69D3B0; }
 
   .answers-card { background:var(--white); border-radius:26px; box-shadow:var(--shadow-lg); max-width:840px; margin:80px auto 0; padding:56px 48px; position:relative; z-index:1; text-align:left; }
   @media (max-width:640px){ .answers-card{ padding:40px 26px; } }
-  .answers-card h3 { font-size:clamp(24px,3vw,30px); margin-bottom:24px; }
+  .answers-card h3 { font-size:clamp(24px,3vw,32px); margin-bottom:24px; }
+  .dash { list-style:none; padding:0; margin:0; }
+  .dash li { position:relative; padding-left:24px; }
+  .dash li::before { content:"\2014"; color:var(--teal); font-weight:800; position:absolute; left:0; }
   .answers-list { margin:26px 0; font-size:18px; }
   .answers-list li { padding-top:8px; padding-bottom:8px; }
-  .answers-card p { color:var(--ink-soft); font-size:18px; }
-  .answers-note { font-family:'Raleway',sans-serif; font-weight:700; color:var(--olive-dark); font-size:18px; margin-top:18px; }
-  .answers-served { text-align:left; font-family:'Raleway',sans-serif; font-size:14px; color:var(--ink-soft); margin-top:36px; font-style:italic; }
-  .pride-reframe { text-align:center; font-family:'Raleway',sans-serif; font-weight:700; font-size:16px; color:var(--olive-dark); margin:18px 0 0; }
+  .answers-card p { color:var(--olive); font-size:18px; }
+  .answers-served { text-align:left; font-family:'Raleway',sans-serif; font-size:14px; color:var(--olive); margin-top:36px; font-style:italic; }
 
   .empathy-block { background:linear-gradient(160deg, var(--olive-dark) 0%, #0F1A00 100%); border-radius:18px; padding:32px 30px; margin:28px 0; }
-  .empathy-block p { color:#E4EBE0; font-size:17px; line-height:1.7; margin:0 0 18px; }
+  .empathy-block p { color:#E4EBE0; font-size:16px; line-height:1.7; margin:0 0 18px; }
   .empathy-block p:last-child { margin-bottom:0; }
   .empathy-block strong { color:#69D3B0; }
   .empathy-signoff { font-weight:700; color:#fff; font-size:18px; }
@@ -329,12 +318,17 @@
   @media (min-width:1024px){
     .improve-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; max-width:1040px; }
   }
+  .fix-grid { display:flex; flex-direction:column; gap:28px; max-width:640px; margin:0 auto; position:relative; z-index:1; }
+  @media (min-width:1024px){
+    .fix-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; max-width:1040px; }
+  }
   .method-block { max-width:700px; margin:90px auto 0; position:relative; z-index:1; }
-  .philosophy-intro { max-width:700px; margin:0 auto 56px; display:flex; flex-direction:column; gap:16px; }
-  .philosophy-intro p { font-size:18px; font-weight:400; color:var(--ink); margin:0; text-align:left; line-height:1.85; }
-  .philosophy-intro p strong { color:var(--olive); }
-  .method-standout { font-family:'Raleway',sans-serif; font-size:26px; font-weight:400; color:var(--olive); text-align:left; line-height:1.35; margin:0 0 36px; }
-  .pipeline-instruction { display:none; font-family:'Raleway',sans-serif; font-size:16px; color:var(--ink-soft); font-weight:700; text-decoration:underline; text-decoration-color:var(--teal); text-underline-offset:3px; margin:-24px 0 20px; }
+  .method-lines { margin:20px 0 32px; border-left:3px solid var(--teal); padding-left:24px; margin-left:20px; }
+  @media (max-width:640px){ .method-lines{ margin-left:8px; padding-left:16px; } }
+  .method-line { text-align:left; font-size:18px; font-weight:700; color:var(--olive); margin:0 0 34px; line-height:1.6; }
+  .method-line:last-child { margin-bottom:0; }
+  p.method-standout { font-family:'Raleway',sans-serif; font-size:18px; font-weight:700; color:var(--olive); text-align:left; line-height:1.35; margin:0 0 36px; }
+  .pipeline-instruction { display:none; font-family:'Raleway',sans-serif; font-size:16px; color:var(--olive); font-weight:700; margin:-24px 0 20px; }
 
   /* Pipeline board - desktop: horizontal panels with connector line, mobile: vertical accordion */
   .pipeline { position:relative; display:flex; gap:32px; margin-top:16px; }
@@ -345,7 +339,7 @@
   .pipeline-label { position:relative; z-index:1; display:block; font-family:'Raleway',sans-serif; font-weight:700; font-size:16px; letter-spacing:0.06em; text-transform:uppercase; color:var(--teal-deep); margin-bottom:14px; }
   .pipeline-body { position:relative; z-index:1; display:block; }
   .pipeline-expand-icon { display:none; }
-  .pipeline-body p { font-size:16px; color:var(--ink-soft); line-height:1.6; margin:0; }
+  .pipeline-body p { font-size:16px; color:var(--olive); line-height:1.6; margin:0; }
 
   @media (max-width:767px){
     .pipeline-instruction { display:block; }
@@ -354,11 +348,11 @@
     .pipeline-track { display:none; }
     .pipeline-step { padding:0; position:relative; z-index:1; border-radius:14px; }
     .pipeline-toggle { cursor:pointer; display:flex; align-items:center; gap:14px; padding:18px 20px; background:var(--white); }
-    .pipeline-expand-icon { display:flex; align-items:center; justify-content:center; margin-left:auto; flex-shrink:0; width:32px; height:32px; border-radius:50%; background:var(--teal-tint); color:var(--teal-deep); font-weight:800; font-size:20px; transition:transform .2s ease, background .2s ease; }
+    .pipeline-expand-icon { display:flex; align-items:center; justify-content:center; margin-left:auto; flex-shrink:0; width:32px; height:32px; border-radius:50%; background:var(--teal-tint); color:var(--teal-deep); font-weight:800; font-size:21px; transition:transform .2s ease, background .2s ease; }
     .pipeline-expand-icon::before { content:"+"; }
     .pipeline-step.is-expanded .pipeline-expand-icon { background:var(--teal); color:#fff; transform:rotate(180deg); }
     .pipeline-step.is-expanded .pipeline-expand-icon::before { content:"\2013"; }
-    .pipeline-num { position:static; font-size:22px; color:var(--teal-deep); flex-shrink:0; }
+    .pipeline-num { position:static; font-size:21px; color:var(--teal-deep); flex-shrink:0; }
     .pipeline-label { margin-bottom:0; font-size:16px; }
     .pipeline-body { max-height:0; padding:0 20px; overflow:hidden; transition:max-height .3s ease, padding .3s ease; }
     .pipeline-step.is-expanded .pipeline-body { max-height:260px; padding:0 20px 20px; }
@@ -367,76 +361,78 @@
   .roadmap-example { max-width:760px; margin:48px auto 0; background:#fff; border:2px solid var(--teal); border-radius:16px; overflow:hidden; box-shadow:var(--shadow-md); }
   .roadmap-example summary { padding:22px 26px; cursor:pointer; list-style:none; font-family:'Raleway',sans-serif; font-weight:800; color:var(--olive-dark); font-size:18px; display:flex; align-items:center; justify-content:space-between; background:var(--teal-tint); }
   .roadmap-example summary::-webkit-details-marker { display:none; }
-  .roadmap-example summary::after { content:"+"; color:var(--teal); font-weight:800; font-size:20px; }
+  .roadmap-example summary::after { content:"+"; color:var(--teal); font-weight:800; font-size:21px; }
   .roadmap-example[open] summary::after { content:"\2013"; }
   .roadmap-body { padding:0 26px 30px; }
-  .roadmap-disclaimer { font-family:'Raleway',sans-serif; font-style:italic; font-size:15px; color:var(--ink-soft); background:var(--cream-alt); padding:10px 14px; border-radius:8px; margin:0 0 24px; }
+  .roadmap-disclaimer { font-family:'Raleway',sans-serif; font-style:italic; font-size:16px; color:var(--olive); margin:0 0 24px; }
   .roadmap-category { font-family:'Raleway',sans-serif; font-weight:800; font-size:14px; text-transform:uppercase; letter-spacing:0.06em; color:var(--teal-deep); margin:22px 0 10px; }
   .roadmap-category:first-of-type { margin-top:0; }
   .roadmap-list { list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:8px; }
-  .roadmap-list li { position:relative; padding-left:22px; color:var(--ink); font-size:16px; line-height:1.55; }
+  .roadmap-list li { position:relative; padding-left:22px; color:var(--olive-dark); font-size:16px; line-height:1.55; }
   .roadmap-list li::before { content:"\2014"; color:var(--teal); font-weight:800; position:absolute; left:0; }
-  .roadmap-text { color:var(--ink); font-size:16px; line-height:1.65; margin:0; }
-  @media (max-width:640px){ .method-standout{ font-size:21px; } }
+  .roadmap-text { color:var(--olive-dark); font-size:16px; line-height:1.65; margin:0; }
   .change-stick-box { background:var(--blue-tint); border:1.5px solid var(--teal); border-radius:20px; padding:36px 34px; margin:40px 0; }
   @media (max-width:640px){ .change-stick-box{ padding:24px 20px; } }
   .change-stick-box h3 { font-size:24px; font-weight:800; margin-bottom:14px; }
-  .change-stick-box p { color:var(--ink-soft); font-size:16px; margin:0 0 16px; text-align:left; }
+  .change-stick-box p { color:var(--olive); font-size:16px; margin:0 0 16px; text-align:left; }
   .change-points { display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; margin:28px 0; }
   @media (max-width:700px){ .change-points{ grid-template-columns:1fr; } }
   .change-point { background:rgba(255,255,255,0.6); border-radius:14px; padding:20px 18px; text-align:center; }
   .change-point-icon { width:40px; height:40px; border-radius:50%; background:var(--teal); color:#fff; display:flex; align-items:center; justify-content:center; margin:0 auto 12px; }
   .change-point-icon svg { width:20px; height:20px; }
-  .change-point p { margin:0; font-size:14px; color:var(--ink-soft); text-align:center; }
-  .change-point p strong { display:block; color:var(--olive-dark); font-size:15px; margin-bottom:4px; }
-  .improve-item { background:var(--white); border-radius:16px; padding:28px 24px 22px; box-shadow:var(--shadow-md); transition:transform .2s ease, box-shadow .2s ease; border-top:3px solid var(--teal); border-left:1px solid var(--line); border-right:1px solid var(--line); border-bottom:1px solid var(--line); text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; min-height:0; }
+  .change-point p { margin:0; font-size:16px; color:var(--olive); text-align:center; }
+  .change-point p strong { display:block; color:var(--olive-dark); font-size:18px; margin-bottom:6px; }
+  .change-single-line { font-size:24px; font-weight:800; color:var(--olive); text-align:left; margin:0 0 8px; }
+  .improve-item { background:var(--white); border-radius:16px; padding:28px 24px 22px; box-shadow:var(--shadow-md); transition:transform .2s ease, box-shadow .2s ease; border-top:3px solid var(--teal); border-left:1px solid var(--line); border-right:1px solid var(--line); border-bottom:1px solid var(--line); text-align:left; display:flex; flex-direction:column; align-items:flex-start; justify-content:flex-start; gap:14px; min-height:0; }
   .improve-icon { width:48px; height:48px; border-radius:50%; background:var(--teal-tint); color:var(--teal-deep); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
   .improve-icon.icon-blue { background:var(--blue-tint); color:var(--teal-deep); }
   .improve-icon.icon-olive { background:#E4EAD4; color:var(--olive); }
   .improve-icon svg { width:24px; height:24px; }
   .improve-item:hover { transform:translateY(-4px); box-shadow:var(--shadow-md); }
-  .improve-item p { color:var(--ink); font-size:18px; font-weight:600; margin:0; line-height:1.5; }
+  .improve-item p { color:var(--olive-dark); font-size:18px; font-weight:600; margin:0; line-height:1.5; }
 
-  .service-menu-title { display:inline-block; position:relative; padding:0 0 14px; color:var(--olive-dark); font-size:clamp(38px,5.2vw,58px); font-weight:800; line-height:1.08; letter-spacing:-0.02em; }
-  .service-menu-title::after { content:""; position:absolute; left:10%; right:10%; bottom:0; height:7px; border-radius:999px; background:var(--teal); }
-  .service-menu-intro { max-width:780px; margin:0 auto 30px; text-align:center; color:var(--ink-soft); font-size:18px; line-height:1.7; }
-  .expand-all-btn { background:none; border:1.5px solid var(--teal); color:var(--teal-deep); font-family:'Raleway',sans-serif; font-weight:700; font-size:15px; padding:12px 20px; min-height:44px; border-radius:999px; cursor:pointer; transition:background .2s ease, color .2s ease; }
-  .expand-instruction { font-family:'Raleway',sans-serif; font-size:16px; color:var(--ink-soft); text-decoration:underline; text-decoration-color:var(--teal); text-underline-offset:3px; margin:0 0 14px; }
+  .service-menu-title { display:inline-block; position:relative; padding:0 0 14px; color:var(--olive-dark); font-size:clamp(36px,5.2vw,58px); font-weight:800; line-height:1.08; letter-spacing:-0.02em; }
+  .service-menu-title::after { content:""; position:absolute; left:0; right:0; bottom:0; height:7px; border-radius:999px; background:var(--teal); }
+  .service-menu-intro { max-width:980px; margin:0 auto 30px; text-align:left; color:var(--olive); font-size:18px; line-height:1.7; }
+  .expand-all-btn { background:none; border:1.5px solid var(--teal); color:var(--teal-deep); font-family:'Raleway',sans-serif; font-weight:700; font-size:16px; padding:12px 20px; min-height:44px; border-radius:999px; cursor:pointer; transition:background .2s ease, color .2s ease; }
+  .expand-instruction { font-family:'Raleway',sans-serif; font-size:16px; color:var(--olive); font-weight:600; margin:0 0 14px; }
   .expand-instruction strong { color:var(--teal-deep); }
   .expand-all-btn:hover { background:var(--teal); color:#fff; }
   .package-menu { max-width:820px; margin:0 auto 64px; padding-top:4px; }
-  .package-menu-head { display:flex; align-items:flex-end; justify-content:space-between; gap:20px; margin-bottom:28px; padding-bottom:18px; border-bottom:2px solid var(--teal); }
-  .package-menu-head h3 { margin:0; color:var(--olive); font-size:clamp(22px,2.6vw,28px); }
-  .package-menu-head p { margin:0; color:var(--ink-soft); font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; }
+  .package-menu-head { text-align:left; margin-bottom:8px; }
+  .ala-carte-label { margin:0; color:var(--teal-deep); font-size:14px; font-weight:800; text-transform:uppercase; letter-spacing:0.06em; }
+  .plan-intro h3 { color:var(--olive-dark); }
+  .package-panel-pricing-bottom { margin-top:20px; padding-top:20px; border-top:2px solid var(--teal); }
+  .package-panel-pricing-bottom p { margin:0 0 4px; color:var(--olive); font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; }
+  .package-panel-pricing-bottom p:last-child { margin-bottom:0; }
   .service-option { display:block; margin:0 0 16px; background:#fff; border:1px solid var(--line); border-radius:12px; overflow:hidden; }
   .service-option:last-child { margin-bottom:0; }
   .service-option summary { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:18px 22px; cursor:pointer; list-style:none; }
   .service-option summary::-webkit-details-marker { display:none; }
   .service-option summary::before { content:"+"; color:var(--teal); font-weight:800; font-size:18px; order:3; flex-shrink:0; width:18px; text-align:center; }
   .service-option[open] summary::before { content:"\2013"; }
-  .service-summary-name { font-weight:700; color:var(--olive-dark); font-size:17px; line-height:1.4; }
+  .service-summary-name { font-weight:700; color:var(--olive-dark); font-size:16px; line-height:1.4; }
   .service-summary-price { font-family:'Raleway',sans-serif; font-weight:800; font-size:16px; color:var(--teal-deep); white-space:nowrap; margin-left:auto; }
   .service-card { padding:0 22px 24px; display:flex; flex-direction:column; gap:18px; }
-  .service-detail, .service-metric { color:var(--ink); font-size:16px; line-height:1.7; }
+  .service-detail, .service-metric { color:var(--olive-dark); font-size:16px; line-height:1.7; }
   .service-detail strong, .service-metric strong { display:block; color:var(--olive); margin-bottom:7px; font-size:14px; text-transform:uppercase; letter-spacing:0.06em; }
   .service-files { display:block; margin-top:16px; padding-top:14px; border-top:1px solid var(--line); }
   .service-files strong { display:block; color:var(--teal-deep); margin-bottom:8px; font-size:14px; text-transform:uppercase; letter-spacing:0.06em; }
   .service-files ul { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:6px; }
-  .service-files li { position:relative; padding-left:24px; color:var(--ink-soft); font-size:16px; line-height:1.5; }
+  .service-files li { position:relative; padding-left:24px; color:var(--olive); font-size:16px; line-height:1.5; }
   .service-files li::before { content:"✓"; color:var(--teal); font-weight:800; position:absolute; left:0; }
-  .service-metric { color:var(--ink-soft); }
+  .service-metric { color:var(--olive); }
   .evidence-tag { display:inline-block; margin-top:8px; padding:3px 8px; border-radius:999px; background:var(--teal-tint); color:var(--olive-dark); font-size:14px; font-weight:800; }
   .evidence-notes { max-width:820px; margin:50px auto 0; padding:26px; background:#fff; border:1px solid var(--line); border-radius:16px; }
   .evidence-notes h3 { margin-top:0; color:var(--olive); }
-  .evidence-intro { font-size:14px; color:var(--ink-soft); font-style:italic; margin:0 0 18px; padding-bottom:16px; border-bottom:1px solid var(--line); }
+  .evidence-intro { font-size:14px; color:var(--olive); font-style:italic; margin:0 0 18px; padding-bottom:16px; border-bottom:1px solid var(--line); }
   .evidence-notes ol { margin:0; padding-left:22px; }
-  .evidence-notes li { margin:0 0 12px; color:var(--ink-soft); font-size:14px; line-height:1.6; }
+  .evidence-notes li { margin:0 0 12px; color:var(--olive); font-size:14px; line-height:1.6; }
   .evidence-notes cite { font-style:normal; }
   .evidence-notes a { color:var(--teal-deep); text-decoration:underline; }
   @media (max-width:640px){
     .service-option summary { flex-wrap:wrap; }
     .service-summary-price { margin-left:0; }
-    .package-menu-head { align-items:flex-start; flex-direction:column; gap:5px; }
   }
   @media print {
     header, footer, .btn, .mobile-menu { display:none !important; }
@@ -459,10 +455,25 @@
 
   /* The Difference Fieldwise Makes - outcome cards */
   .transform-grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:20px; max-width:640px; margin:0 auto; position:relative; z-index:1; }
+  .unique-callout { max-width:700px; margin:48px auto 0; background:rgba(105,211,176,0.08); border:2px solid #69D3B0; border-radius:18px; padding:32px 30px; position:relative; z-index:1; }
+  .unique-callout-label { font-family:'Raleway',sans-serif; font-weight:800; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; color:#69D3B0; margin:0 0 14px; }
+  .unique-callout-text { color:#E4EBE0; font-size:16px; line-height:1.6; margin:0 0 16px; }
+  .unique-callout-text strong { color:#69D3B0; }
+  .unique-callout-example { color:#fff; font-size:16px; font-weight:700; line-height:1.6; margin:0; }
   @media (max-width:640px){ .transform-grid{ grid-template-columns:1fr; } }
   .outcome-card { background:#fff; border-radius:16px; padding:26px 22px; box-shadow:var(--shadow-sm); display:flex; flex-direction:column; align-items:center; gap:14px; text-align:center; border-top:3px solid var(--teal); transition:transform .2s ease, box-shadow .2s ease; }
+  section.on-dark .outcome-card p { margin:0; color:var(--olive-dark); font-size:16px; font-weight:600; line-height:1.4; }
+
+  /* Our Approach - compact 5-step grid */
+  .approach-grid { display:grid; grid-template-columns:repeat(5, 1fr); gap:18px; max-width:1080px; margin:0 auto; position:relative; z-index:1; }
+  @media (max-width:900px){ .approach-grid{ grid-template-columns:repeat(2, 1fr); } }
+  @media (max-width:520px){ .approach-grid{ grid-template-columns:1fr; } }
+  .approach-item { background:#fff; border-radius:16px; padding:24px 18px; box-shadow:var(--shadow-sm); text-align:center; }
+  .approach-num { width:32px; height:32px; border-radius:50%; background:var(--olive-dark); color:#69D3B0; display:flex; align-items:center; justify-content:center; font-family:'Raleway',sans-serif; font-weight:800; font-size:16px; margin:0 auto 12px; }
+  section.on-dark .approach-item h3 { font-size:18px; margin-bottom:10px; color:var(--olive-dark); }
+  section.on-dark .approach-item p { font-size:16px; color:var(--olive); margin:0; line-height:1.5; }
   .outcome-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-md); }
-  .outcome-card p { margin:0; color:var(--ink); font-size:16px; font-weight:600; line-height:1.4; }
+  .outcome-card p { margin:0; color:var(--olive-dark); font-size:16px; font-weight:600; line-height:1.4; }
   .outcome-icon { width:44px; height:44px; border-radius:50%; background:var(--teal-tint); color:var(--teal-deep); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
   .outcome-icon svg { width:22px; height:22px; }
   .outcome-icon.accent-blue { background:var(--blue-tint); color:var(--teal-deep); }
@@ -474,55 +485,52 @@
   @media (max-width:820px){ .quick-compare{ flex-direction:column; } }
   .quick-compare-card { flex:1; display:flex; flex-direction:column; gap:6px; background:#fff; border-radius:16px; padding:22px 22px 20px; box-shadow:var(--shadow-sm); text-decoration:none; border-top:4px solid var(--teal); transition:transform .2s ease, box-shadow .2s ease; }
   .quick-compare-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-md); }
-  .quick-compare-card.accent-mint { border-top-color:#69D3B0; }
-  .quick-compare-card.accent-teal { border-top-color:var(--teal); }
+  .quick-compare-card.accent-mint { border-top-color:var(--olive); }
+  .quick-compare-card.accent-teal { border-top-color:var(--olive); }
   .quick-compare-card.accent-olive { border-top-color:var(--olive); }
-  .quick-compare-num { font-family:'Raleway',sans-serif; font-weight:800; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; color:var(--teal-deep); }
+  .quick-compare-num { font-family:'Raleway',sans-serif; font-weight:800; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; color:var(--teal-deep); }
   .quick-compare-num::before { content:"Step "; }
-  .quick-compare-name { font-family:'Raleway',sans-serif; font-weight:800; font-size:17px; color:var(--olive-dark); line-height:1.3; }
-  .quick-compare-price { font-family:'Raleway',sans-serif; font-weight:700; font-size:19px; color:var(--olive-dark); margin-top:4px; }
-  .quick-compare-time { font-size:14px; color:var(--ink-soft); }
-  .quick-compare-caption { text-align:center; max-width:520px; margin:0 auto 56px; color:var(--ink-soft); font-size:15px; font-style:italic; }
+  .quick-compare-name { font-family:'Raleway',sans-serif; font-weight:800; font-size:16px; color:var(--olive-dark); line-height:1.3; }
+  .quick-compare-time { font-size:14px; color:var(--olive); }
 
   /* Package panels */
   .package-panel-track { position:relative; max-width:820px; margin:0 auto; }
   .package-panel-track::before { content:""; position:absolute; top:8px; bottom:8px; left:27px; width:3px; background:linear-gradient(180deg, #69D3B0 0%, var(--teal) 50%, var(--olive) 100%); border-radius:2px; z-index:0; }
   @media (max-width:640px){ .package-panel-track::before { left:19px; } }
+  @media (max-width:480px){ .package-panel-track::before { display:none; } }
   .package-panel { position:relative; display:flex; gap:24px; margin-bottom:80px; }
   .package-panel:last-child { margin-bottom:0; }
-  .package-panel-num { position:relative; z-index:1; flex-shrink:0; width:56px; height:56px; border-radius:50%; background:#fff; border:3px solid var(--teal); display:flex; align-items:center; justify-content:center; font-family:'Raleway',sans-serif; font-weight:800; font-size:22px; color:var(--olive-dark); box-shadow:var(--shadow-sm); }
-  @media (max-width:640px){ .package-panel-num{ width:40px; height:40px; font-size:17px; } }
-  .package-panel.accent-mint .package-panel-num { border-color:#69D3B0; }
-  .package-panel.accent-teal .package-panel-num { border-color:var(--teal); }
+  @media (max-width:480px){ .package-panel { flex-direction:column; align-items:center; gap:10px; } }
+  .package-panel-num { position:relative; z-index:1; flex-shrink:0; width:56px; height:56px; border-radius:50%; background:#fff; border:3px solid var(--teal); display:flex; align-items:center; justify-content:center; font-family:'Raleway',sans-serif; font-weight:800; font-size:21px; color:var(--olive-dark); box-shadow:var(--shadow-sm); }
+  @media (max-width:640px){ .package-panel-num{ width:40px; height:40px; font-size:16px; } }
+  .package-panel.accent-mint .package-panel-num { border-color:var(--olive); }
+  .package-panel.accent-teal .package-panel-num { border-color:var(--olive); }
   .package-panel.accent-olive .package-panel-num { border-color:var(--olive); }
   .package-panel-body { flex:1; min-width:0; background:rgba(255,255,255,0.5); border-radius:22px; padding:32px; border:1px solid rgba(255,255,255,0.6); }
   @media (max-width:640px){ .package-panel-body{ padding:18px; } .package-panel{ gap:14px; } }
+  @media (max-width:480px){ .package-panel-body{ width:100%; padding:16px; } }
   .package-panel .pricing-grid { margin:0 0 40px; }
   .package-panel .package-menu { margin:0; }
 
   .pricing-grid { display:flex; flex-direction:column; gap:28px; max-width:820px; margin:0 auto; align-items:stretch; position:relative; z-index:1; }
-  .plan { background:var(--white); border-radius:22px; padding:36px 34px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:transform .2s ease, box-shadow .2s ease; text-align:left; border:2px solid transparent; }
+  .plan { background:var(--white); border-radius:22px; padding:36px 34px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:transform .2s ease, box-shadow .2s ease; text-align:left; border:2px solid var(--olive); }
   .plan:hover { transform:translateY(-5px); box-shadow:var(--shadow-md); }
-  .plan.featured { position:relative; border-color:var(--teal); box-shadow:var(--shadow-lg); padding-top:44px; }
-  .featured-ribbon { position:absolute; top:-16px; left:50%; transform:translateX(-50%); background:var(--teal); color:#fff; font-family:'Raleway',sans-serif; font-weight:800; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; padding:7px 20px; border-radius:999px; box-shadow:var(--shadow-sm); white-space:nowrap; }
-  .plan .step-tag { font-family:'Raleway',sans-serif; font-size:14px; font-weight:800; letter-spacing:0.06em; text-transform:uppercase; color:var(--teal-deep); margin-bottom:10px; }
+  .plan.featured { position:relative; box-shadow:var(--shadow-lg); padding-top:44px; }
   .plan h3 { font-size:24px; font-weight:700; margin-bottom:10px; min-height:auto; }
-  .plan .plan-sub { font-size:18px; color:var(--ink-soft); margin-bottom:20px; font-style:italic; }
   .plan-intro { min-height:0; }
   .plan .prereq { font-family:'Raleway',sans-serif; font-size:16px; font-weight:700; color:var(--teal-deep); background:rgba(46,139,132,0.09); border-radius:8px; padding:6px 16px; margin-bottom:10px; }
   .plan .price { font-family:'Raleway',sans-serif; font-size:clamp(22px,2.4vw,24px); font-weight:400; color:var(--olive-dark); margin-top:8px; }
-  .plan > .btn-block { margin-top:auto; }
   .plan .price.small { font-size:clamp(19px,2.1vw,21px); }
-  .plan .price-note { font-family:'Raleway',sans-serif; font-size:16px; font-weight:500; color:var(--ink-soft); margin-bottom:10px; line-height:1.6; background:var(--teal-tint); padding:8px 10px; border-radius:6px; display:inline-block; text-decoration:underline; text-decoration-color:var(--teal); text-underline-offset:3px; }
+  .plan .price-note { font-family:'Raleway',sans-serif; font-size:16px; font-weight:500; color:var(--olive); margin-bottom:10px; line-height:1.6; background:var(--teal-tint); padding:8px 10px; border-radius:6px; display:inline-block; }
   .plan .timeline { font-family:'Raleway',sans-serif; font-size:16px; font-weight:700; color:var(--olive); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:24px; }
-  .plan ul.includes { list-style:none; padding:0; margin:0 0 24px; font-size:18px; color:var(--ink-soft); }
+  .plan ul.includes { list-style:none; padding:0; margin:0 0 24px; font-size:18px; color:var(--olive); }
   .plan ul.includes li { padding:8px 0 8px 28px; position:relative; }
   .plan ul.includes li::before { content:"✓"; color:var(--teal); font-weight:800; position:absolute; left:2px; }
   .plan-details-label { font-family:'Raleway',sans-serif; font-weight:800; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; color:var(--teal-deep); padding:10px 0; margin-bottom:8px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
   .plan-details { display:block; }
   .plan .think-box { background:var(--olive-dark); color:#fff; border-radius:14px; padding:24px 24px; margin-bottom:24px; display:flex; flex-direction:column; justify-content:flex-start; }
   .plan .think-box strong { display:block; font-family:'Raleway',sans-serif; color:#69D3B0; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:10px; }
-  .plan .think-box p { color:#E4EBE0; font-size:18px; margin:0; line-height:1.6; text-decoration:underline; text-decoration-color:#69D3B0; text-underline-offset:3px; }
+  .plan .think-box p { color:#E4EBE0; font-size:18px; margin:0; line-height:1.6; }
 
   .about-wrap { display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; align-items:start; position:relative; z-index:1; }
   @media (max-width:820px){ .about-wrap{ grid-template-columns:1fr; } }
@@ -532,7 +540,7 @@
   .about-linkedin { margin-top:8px; font-size:16px; }
   .name-meaning { background:var(--blue-tint); border-left:4px solid var(--teal); border-radius:0 16px 16px 0; padding:30px 32px; }
   .name-meaning h3 { font-size:24px; margin-bottom:16px; }
-  .name-meaning p { font-size:18px; color:var(--ink); margin-bottom:14px; }
+  .name-meaning p { font-size:18px; color:var(--olive-dark); margin-bottom:14px; }
   .name-meaning p:last-child { margin-bottom:0; }
   .name-meaning strong { color:var(--teal-deep); }
 
@@ -542,13 +550,13 @@
   summary::-webkit-details-marker { display:none; }
   summary::before { content:"+"; color:var(--teal); font-weight:800; margin-right:16px; display:inline-block; width:14px; }
   details[open] summary::before { content:"–"; }
-  details p { color:var(--ink-soft); margin:18px 0 0 30px; font-size:18px; text-align:left; }
+  details p { color:var(--olive); margin:18px 0 0 30px; font-size:18px; text-align:left; }
 
   .final-card { background:var(--white); border-radius:26px; box-shadow:var(--shadow-lg); max-width:840px; margin:0 auto; padding:64px 52px; text-align:left; position:relative; z-index:1; }
   @media (max-width:640px){ .final-card{ padding:38px 26px; } }
-  .final-card p { text-align:left; color:var(--ink-soft); font-size:18px; }
+  .final-card p { text-align:left; color:var(--olive); font-size:18px; }
   .final-card .lead { font-weight:400; font-family:'Raleway',sans-serif; color:var(--olive-dark); font-size:18px; }
-  .served-line { text-align:left; padding:44px 32px; background:var(--cream-alt); font-family:'Raleway',sans-serif; font-size:18px; color:var(--ink-soft); font-style:italic; border-top:1px solid var(--line); }
+  .served-line { text-align:left; padding:44px 32px; background:var(--cream-alt); font-family:'Raleway',sans-serif; font-size:18px; color:var(--olive); font-style:italic; border-top:1px solid var(--line); }
 
   footer { background:#16220F; color:#C7D4C4; padding:64px 0 36px; }
   .foot-text { font-family:'Raleway',sans-serif; font-size:18px; font-weight:500; line-height:1.7; color:#C7D4C4; margin:0 0 10px; max-width:340px; }
@@ -557,7 +565,7 @@
   @media (max-width:700px){ .footer-grid{ grid-template-columns:1fr; gap:34px; text-align:left; } }
   .foot-logo { display:flex; align-items:center; gap:8px; font-family:'Raleway',sans-serif; font-weight:800; font-size:24px; margin-bottom:16px; color:#fff; }
   .foot-logo img { height:34px; width:auto; }
-  footer h4 { font-family:'Raleway',sans-serif; font-size:16px; letter-spacing:0.06em; text-transform:uppercase; color:#69D3B0; margin:0 0 18px; }
+  footer h3 { font-family:'Raleway',sans-serif; font-size:16px; letter-spacing:0.06em; text-transform:uppercase; color:#69D3B0; margin:0 0 18px; }
   footer ul { list-style:none; padding:0; margin:0; }
   footer li { margin-bottom:13px; font-size:18px; }
   footer a { color:#C7D4C4; text-decoration:none; }
@@ -565,14 +573,14 @@
   .foot-address, .foot-serving { color:#C7D4C4; }
   .footer-bottom { border-top:1px solid #2A3A22; margin-top:50px; padding-top:26px; text-align:center; font-size:16px; color:#8FA189; }
   .footer-bottom p { margin:5px 0; }
-  .cookie-note { position:fixed; left:auto; right:20px; bottom:20px; max-width:400px; background:var(--olive-dark); color:#E4EBE0; border-radius:14px; padding:18px 20px; box-shadow:var(--shadow-lg); font-family:'Raleway',sans-serif; font-size:15px; display:none; align-items:center; gap:16px; z-index:50; }
+  .cookie-note { position:fixed; left:auto; right:20px; bottom:20px; max-width:400px; background:var(--olive-dark); color:#E4EBE0; border-radius:14px; padding:18px 20px; box-shadow:var(--shadow-lg); font-family:'Raleway',sans-serif; font-size:16px; display:none; align-items:center; gap:16px; z-index:50; }
   .cookie-note.show { display:flex; }
   .cookie-note a { color:#69D3B0; }
   .cookie-note button { background:var(--teal); color:#fff; border:none; border-radius:8px; padding:9px 16px; font-family:'Raleway',sans-serif; font-weight:700; font-size:14px; cursor:pointer; flex-shrink:0; }
   @media (max-width:640px){
-    .cookie-note { position:static; left:auto; right:auto; bottom:auto; top:auto; max-width:none; border-radius:0; padding:10px 14px; font-size:12px; gap:10px; }
+    .cookie-note { position:static; left:auto; right:auto; bottom:auto; top:auto; max-width:none; border-radius:0; padding:10px 14px; font-size:14px; gap:10px; }
     .cookie-note.show { display:flex; }
-    .cookie-note button { padding:7px 11px; font-size:12px; }
+    .cookie-note button { padding:7px 11px; font-size:14px; }
   }
 </style>
 </head>
@@ -589,7 +597,7 @@
   }
 </script>
 
-<div class="utility-bar"><em>Proudly serving</em> Nashville, Murfreesboro, Lebanon, Columbia &amp; greater Middle TN. <span class="utility-divider">&middot;</span> <a href="mailto:hello@thefieldwisegroup.com" class="utility-email">Just want to email first? hello@thefieldwisegroup.com</a></div>
+<div class="utility-bar"><em>Proudly serving</em> Nashville, Murfreesboro, Lebanon, Columbia &amp; greater Middle TN.</div>
 
 <header id="site-header">
   <div class="wrap">
@@ -601,7 +609,7 @@
         <a class="nav-link" href="#about">About</a>
         <a class="nav-link" href="#faq">FAQ</a>
       </div>
-      <a class="btn btn-primary" href="https://calendly.com/thefieldwisegroup/15min" target="_blank" rel="noopener">Book Your 15-Min Call</a>
+      <a class="btn btn-primary" data-cta-location="header" href="https://calendly.com/thefieldwisegroup/15min" target="_blank" rel="noopener">Book Your 15-Min Call</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -619,53 +627,74 @@
 
 <section class="hero" id="top">
   <div class="wrap">
-    <p class="hero-eyebrow reveal">Systems That Work In The Real World</p>
-    <h1 class="reveal">You've grown the business.<span class="hero-subhead">Now the way it runs needs to catch up.</span></h1>
+    <h1 class="reveal">You've <span style="color:#69D3B0;">grown</span> the business.<span class="hero-subhead">But the business is relying on you too much.</span></h1>
     <div class="hero-rule reveal"></div>
-    <p class="hero-lead reveal">You're an expert at your trade. Fieldwise is the expert at making your business run better, before the workarounds you're patching today turn into the problems you can't ignore tomorrow. It fixes the behind-the-scenes so every job gets easier, without slowing down the work already in motion.</p>
+    <p class="hero-lead reveal">The way it runs just needs to catch up.</p>
     <div class="hero-cta-row reveal">
-      <a class="btn hero-cta-btn" href="https://calendly.com/thefieldwisegroup/15min" target="_blank" rel="noopener">Book Your Free 15-Min Answers Call</a>
+      <a class="btn hero-cta-btn" data-cta-location="hero" href="https://calendly.com/thefieldwisegroup/15min" target="_blank" rel="noopener">Book Your Free 15-Min Answers Call</a>
     </div>
     <p class="hero-cta-note reveal">Pick a time. Fifteen minutes is all it takes to know if this is worth pursuing.</p>
   </div>
+  <div class="hero-fade" aria-hidden="true"></div>
 </section>
 
-<section class="on-white section-glow glow-dual">
+
+
+<section class="on-white section-glow glow-xl" style="padding-top:80px; padding-bottom:70px;">
   <div class="wrap">
-    <div class="section-head reveal" style="margin-bottom:76px; max-width:880px;">
-      <h2 style="font-size:clamp(26px,3vw,38px); text-wrap:balance;">As businesses grow, they naturally <span class="accent-underline">outgrow the informal systems</span> that got them there.</h2>
+    <div class="section-head reveal" style="margin-bottom:52px; max-width:880px;">
+      <h2 style="font-size:clamp(30px,3.8vw,42px); text-wrap:balance; line-height:1.3;">As businesses grow, they naturally <span style="color:var(--olive);">outgrow the informal systems</span> that got them there.</h2>
     </div>
 
     <div class="challenge-fix-grid reveal">
-      <div class="challenge-col">
-        <p class="challenge-fix-label">The Challenge</p>
+        <p class="challenge-fix-label label-challenge">The Challenge</p>
         <ul class="challenge-list">
           <li>Customers don't always get the same experience.</li>
           <li>Every employee has their own way of doing the job.</li>
           <li>You're still spending too much time putting out fires.</li>
         </ul>
       </div>
-      <div class="challenge-fix-divider" aria-hidden="true"></div>
-      <div class="fix-col">
-        <p class="challenge-fix-label">The Fix</p>
-        <p class="fix-lead">Built for real, working people, not a boardroom.</p>
-        <p class="fix-text">Your business has talented, skilled people. They just need clearer expectations and processes to do their best work. Fieldwise handles that part for you, freeing up your time to focus on what's next.</p>
+
+    <p class="challenge-fix-label label-fix" style="margin-top:56px; margin-bottom:90px;"><span class="accent-underline">The Fix</span></p>
+
+    <div class="improve-grid">
+      <div class="improve-item reveal">
+        <div class="improve-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.6-4.8 2.6.9-5.4-3.9-3.8 5.4-.8z"/></svg></div>
+        <p><strong style="display:block; color:var(--olive); text-decoration:underline; text-decoration-color:var(--teal); text-underline-offset:4px; margin-bottom:6px;">Systems &amp; Software</strong>Every system gets documented, capturing the knowledge in everyone's head.</p>
+      </div>
+      <div class="improve-item reveal">
+        <div class="improve-icon icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3 2.5-5.5 5-5.5S13 17 13 20"/><path d="M14.5 14.8c2 .2 3.5 2 3.5 4.2"/></svg></div>
+        <p><strong style="display:block; color:var(--olive); text-decoration:underline; text-decoration-color:var(--teal); text-underline-offset:4px; margin-bottom:6px;">Crews &amp; Communication</strong>Every department delivers the same consistent service, and has clear lines of communication to prevent wasted time.</p>
+      </div>
+      <div class="improve-item reveal">
+        <div class="improve-icon icon-olive" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 3 7-8"/><path d="M14 7h5v5"/></svg></div>
+        <p><strong style="display:block; color:var(--olive); text-decoration:underline; text-decoration-color:var(--teal); text-underline-offset:4px; margin-bottom:6px;">Sales &amp; Marketing</strong>Custom quoting gets simpler, quality upsells become part of the conversation, and your Google Business listing gets stronger, with creative marketing included at no extra cost.</p>
       </div>
     </div>
+    <p class="fix-payoff" style="text-align:left; max-width:760px; margin:40px 0 96px;">We build the conditions that continue long after, which is exactly why it pays for itself.</p>
+  </div>
+</section>
 
+<section class="on-dark section-glow glow-xl" style="padding-top:90px; padding-bottom:90px;">
+  <div class="wrap">
     <div class="pullquote-banner reveal">
-      <p class="pullquote-text">Most coaches ask questions. Most consultants give advice.<br><strong>Fieldwise does it for you.</strong></p>
-      <a href="#method" class="pullquote-link">See exactly how &#8594;</a>
+      <p class="pullquote-text"><span class="pq-line">Most coaches ask <span class="pq-underline">questions</span>.</span><br><span class="pq-line">Most consultants give <span class="pq-underline">advice</span>.</span><br><strong>Fieldwise does it for you.</strong></p>
     </div>
   </div>
 </section>
 
-<section id="method" class="on-tint section-glow glow-light" style="padding-top:90px; padding-bottom:90px;">
+
+
+<section id="method" class="on-tint section-glow glow-xl" style="padding-top:40px; padding-bottom:90px;">
   <div class="wrap">
     <div class="section-head reveal">
-      <h2 style="color:var(--olive); font-size:clamp(36px,4.8vw,50px);">The Fieldwise Method<sup style="font-size:0.4em; font-weight:600;">&trade;</sup></h2>
-      <p style="text-align:left; font-size:18px; font-weight:400; color:var(--ink); margin-bottom:28px;"><span style="background:var(--teal-tint); padding:2px 6px 2px 0; border-radius:4px; font-weight:600;">Your business is <strong>successful</strong>, <strong>growing</strong>, and has <strong>talented</strong> people. They just need <span style="text-decoration:underline; text-decoration-color:var(--teal); text-underline-offset:3px;">clearer expectations and practical processes</span> that allow them to do their best work, before the gap between where you are and where you should be gets any wider.</span></p>
-      <p class="method-standout">Here is exactly how I make that happen without slowing down your active jobs:</p>
+      <h2 style="color:var(--olive); font-size:clamp(30px,3.8vw,42px);">The Fieldwise Method<sup style="font-size:0.4em; font-weight:600;">&trade;</sup></h2>
+      <div class="method-lines">
+        <p class="method-line">Your business is <span style="text-decoration:underline; text-decoration-color:var(--teal); text-underline-offset:3px;">successful</span>, <span style="text-decoration:underline; text-decoration-color:var(--teal); text-underline-offset:3px;">growing</span>, and has <span style="text-decoration:underline; text-decoration-color:var(--teal); text-underline-offset:3px;">talented</span> people.</p>
+        <p class="method-line">They just need <span style="text-decoration:underline; text-decoration-color:var(--teal); text-underline-offset:3px;">clearer expectations</span> and <span style="text-decoration:underline; text-decoration-color:var(--teal); text-underline-offset:3px;">practical processes</span> that allow them to do their best work.</p>
+        <p class="method-line"><em>Before that gap gets any wider.</em></p>
+      </div>
+      <p class="method-standout">Here's the plan (without interfering with your active jobs):</p>
       <p class="pipeline-instruction">Tap any step below to see the details.</p>
     </div>
 
@@ -679,7 +708,7 @@
           <span class="pipeline-expand-icon" aria-hidden="true"></span>
         </button>
         <div class="pipeline-body">
-          <p>We get on the phone for fifteen minutes, wherever you can spare them. Your truck, your car between jobs, your lunch break. You tell me how your business runs, and I'll tell you exactly how Fieldwise can handle the heavy lifting. No sales pitches, just direct answers.</p>
+          <p>We get on the phone for fifteen minutes, wherever you can spare them. Your truck, your car between jobs, your lunch break. Walk through how your business runs, and hear exactly how Fieldwise can handle the heavy lifting. No sales pitches, just direct answers.</p>
         </div>
       </div>
 
@@ -690,7 +719,7 @@
           <span class="pipeline-expand-icon" aria-hidden="true"></span>
         </button>
         <div class="pipeline-body">
-          <p>I embed myself alongside your admin and field crew to shadow daily routines, map out hidden bottlenecks, and identify exactly what is throwing a wrench into your growth.</p>
+          <p>Fieldwise embeds alongside your admin and field crew to shadow daily routines, map out hidden bottlenecks, and identify exactly what is throwing a wrench into your growth.</p>
         </div>
       </div>
 
@@ -701,7 +730,7 @@
           <span class="pipeline-expand-icon" aria-hidden="true"></span>
         </button>
         <div class="pipeline-body">
-          <p>I don't hand you a binder of homework and walk away. I measure what's really happening, diagnose the root cause instead of just the symptom, build the fix directly into how your team works, and stay on the ground until it sticks. It's the same root-cause thinking big manufacturers use, just adapted for a crew your size.</p>
+          <p>Fieldwise doesn't hand you a binder of homework and walk away. It measures what's really happening, diagnoses the root cause instead of just the symptom, builds the fix directly into how your team works, and stays on the ground until it sticks. It's the same root-cause thinking big manufacturers use, just adapted for a crew your size.</p>
         </div>
       </div>
     </div>
@@ -709,7 +738,7 @@
     <details class="roadmap-example reveal">
       <summary>See a sample discovery roadmap</summary>
       <div class="roadmap-body">
-        <p class="roadmap-disclaimer">This is a generalized, illustrative example of the kind of roadmap a Discovery phase produces, not a real client or result.</p>
+        <p class="roadmap-disclaimer">This is a generalized example of the kind of roadmap used for a multi-city, 100+ employee company.</p>
 
         <p class="roadmap-category">Coordination between departments</p>
         <ul class="roadmap-list">
@@ -753,41 +782,9 @@
   </div>
 </section>
 
-<section class="on-white section-glow glow-corner" style="padding-top:90px;">
-  <div class="wrap">
-    <div class="philosophy-intro reveal">
-      <p style="color:var(--olive);">The process starts by listening to everyone's experience. That means understanding your priorities, your employees' day-to-day frustrations, and the customer experience from beginning to end.</p>
-      <p style="color:var(--olive);"><strong>Most importantly, I work alongside your team to implement these changes until they become a natural part of how your business operates.</strong></p>
-    </div>
 
-    <div class="method-block reveal">
-      <div class="change-stick-box">
-        <h3><span class="accent-underline">Making Change Last</span></h3>
-        <p>The best systems are the ones a team will actually use. That means making the purpose clear, reinforcing early wins, and building genuine ownership in how the work gets done.</p>
-        <div class="change-points">
-          <div class="change-point">
-            <div class="change-point-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.5"/></svg></div>
-            <p><strong>Clear purpose</strong>Everyone understands why the change matters, not just what to do.</p>
-          </div>
-          <div class="change-point">
-            <div class="change-point-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></div>
-            <p><strong>Early wins</strong>Small, visible results build momentum fast.</p>
-          </div>
-          <div class="change-point">
-            <div class="change-point-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg></div>
-            <p><strong>Real ownership</strong>The team adopts it because it's genuinely theirs.</p>
-          </div>
-        </div>
-        <p>No endless meetings. No complicated reports. Just practical improvements that keep the organization running long after the engagement ends.</p>
-      </div>
-    </div>
 
-    <div style="text-align:center; margin-top:56px;" class="reveal">
-      <a class="btn btn-primary" href="#pricing">See How This Works, Step by Step</a>
-    </div>
-  </div>
-</section>
-<section class="on-dark section-glow">
+<section class="on-dark section-glow glow-xl" style="padding-top:90px; padding-bottom:90px;">
   <div class="wrap">
     <div class="section-head reveal" style="position:relative; z-index:1;">
       <h2 style="color:#69D3B0;">Who We Serve</h2>
@@ -809,96 +806,26 @@
   </div>
 </section>
 
-<section class="on-white section-glow glow-light" style="padding-bottom:64px; padding-top:90px;">
-  <div class="wrap">
-    <div class="section-head reveal" style="margin-bottom:40px; text-align:center;">
-      <h2 style="color:var(--olive);">The Difference Fieldwise Makes</h2>
-      <p style="text-align:center; color:var(--ink-soft); font-size:17px; margin-top:10px;">This is what's waiting on the other side of a decision you can make today.</p>
-    </div>
-    <div class="transform-grid reveal">
-      <div class="outcome-card">
-        <div class="outcome-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="0.8" fill="currentColor"/></svg></div>
-        <p>Employees know what success looks like.</p>
-      </div>
-      <div class="outcome-card">
-        <div class="outcome-icon accent-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 14.5-4.6M20 12a8 8 0 0 1-14.5 4.6"/><path d="M18.5 3.5v4h-4M5.5 20.5v-4h4"/></svg></div>
-        <p>Customers receive a dependable experience.</p>
-      </div>
-      <div class="outcome-card">
-        <div class="outcome-icon accent-olive" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.8"/></svg></div>
-        <p>Leadership has full visibility into daily operations.</p>
-      </div>
-      <div class="outcome-card">
-        <div class="outcome-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 3 7-8"/><path d="M14 7h5v5"/></svg></div>
-        <p>The business scales smoothly and profitably.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="on-tint section-glow glow-corner glow-dual-olive">
+
+<section class="on-white section-glow glow-corner" style="padding-top:90px; padding-bottom:90px;">
   <div class="wrap">
-    <div class="section-head reveal">
-      <h2 style="color:var(--teal-deep);">Why Trust Fieldwise</h2>
+    <div class="section-head reveal" style="margin-bottom:60px;">
+      <h2 style="color:var(--olive);"><span class="accent-underline" style="color:var(--olive);">The Cost of Doing&nbsp;Nothing</span></h2>
+      <p style="text-align:center;"><span class="highlight-line">You can probably name at least one frustration that continuously loses you available profits.</span></p>
     </div>
-    <ul class="check-list on-light reveal">
-      <li>16+ years building and scaling businesses</li>
-      <li>Every engagement kept strictly confidential</li>
-      <li>Real operational experience, not just theory</li>
+    <ul class="frustration-grid reveal">
+      <li>Employees <span style="text-decoration:underline; text-decoration-color:var(--teal); text-underline-offset:3px;">waste time</span> on repetitive work and inefficient tasks.</li>
+      <li>Inquiries <span style="text-decoration:underline; text-decoration-color:var(--teal); text-underline-offset:3px;">slip through</span> when your website isn't optimized.</li>
+      <li>Revenue is <span style="text-decoration:underline; text-decoration-color:var(--teal); text-underline-offset:3px;">left behind</span> when high-profit services aren't offered.</li>
+      <li>Opportunities <span style="text-decoration:underline; text-decoration-color:var(--teal); text-underline-offset:3px;">slip away</span> when clients don't get a follow-up.</li>
+      <li>Growth creates a mountain of <span style="text-decoration:underline; text-decoration-color:var(--teal); text-underline-offset:3px;">unnecessary daily stress</span>.</li>
     </ul>
-    <p style="text-align:left; max-width:600px; margin:32px auto 0; color:var(--ink-soft); font-weight:700;">What happens inside your business stays inside your business. Nothing about your company is ever shared, published, or disclosed.</p>
-  </div>
-</section>
 
-<section class="on-white section-glow glow-light glow-corner" id="about">
-  <div class="wrap about-wrap">
-    <div class="about-box reveal">
-      <div class="section-head" style="margin-bottom:24px;"><h2>About <span class="accent-underline">Fieldwise</span></h2></div>
-      <p>When you're in the middle of running a business, it's difficult to step back and see what's really slowing things down. The problems become familiar. The workarounds become routine. Before long, reacting every day starts to feel normal, and normal is exactly what makes it easy to put off fixing. I know, because I've lived it myself, not just watched other people live it.</p>
-      <p>I started Fieldwise because I kept seeing the same pattern. As businesses add locations, crews, or customers, they naturally outgrow the informal systems that got them there. Stronger systems aren't a sign something's broken, they're what keeps a growing business running well.</p>
-      <p>I've spent more than 16 years building businesses and helping other owners build theirs, including founding and scaling a national business and a network of partners and vendors across the country. That experience means understanding how businesses actually function, not just in theory, but in the day-to-day work of leading teams, managing partnerships, and growing at scale.</p>
-      <p><span style="background:var(--teal-tint); padding:2px 6px 2px 0; border-radius:4px; font-weight:600;">Today, I work with trade and service businesses to strengthen the operations behind the work they do best.</span> Every engagement follows the same root-cause thinking large manufacturers use to fix problems for good, adapted for a business your size: find what's actually broken, fix it so it stays fixed, and build it in a way your crew will actually use.</p>
-      <p>A lot of the businesses I work with aren't just businesses. They're family operations, a spouse doing the books at the kitchen table, kids who grew up riding along in the truck. That changes what's actually at stake in getting this right, and I take that seriously.</p>
-      <p>I believe every person, regardless of their role, should be empowered to work at the top of their abilities. I don't believe in micromanaging. I believe in clear expectations, practical support, and giving people the opportunity to succeed.</p>
-      <p>Your business is one of a kind, built by you, shaped by your people, and run in a way that's entirely your own. That's exactly where I start, and it's why what we build together will always be about your business, not a formula.</p>
-      <p class="about-signoff"><img src="assets/fieldwise-icon.svg" alt="" class="about-icon">Carly Cylinder, Founder</p>
-      <p class="about-linkedin"><a href="https://www.linkedin.com/in/carly-cylinder/" target="_blank" rel="noopener">Connect on LinkedIn</a></p>
-    </div>
-    <div class="name-meaning reveal">
-      <h3 style="text-align:center;">Where the name comes from</h3>
-      <p><strong>Field</strong> is expansive. It's the wide-open space where skilled trade and service work actually happens, out in the world, not behind a desk.</p>
-      <p><strong>Wise</strong> means moving forward smarter, not just harder. It's also my maternal grandmother's maiden name, carried forward in this business the same way I hope to help carry your business forward.</p>
-    </div>
-  </div>
-</section>
+    
 
-<section id="how-we-help" class="on-tint section-glow glow-corner glow-blue" style="padding-top:90px;">
-  <div class="wrap">
-    <div class="section-head reveal" style="margin-bottom:56px;"><h2 style="color:var(--olive);">How We Improve Growth</h2><p style="text-align:center; color:var(--ink-soft); font-size:17px; margin-top:10px;">The parts of the business quietly costing you money right now.</p></div>
-
-    <div class="improve-grid">
-      <div class="improve-item reveal">
-        <div class="improve-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.6-4.8 2.6.9-5.4-3.9-3.8 5.4-.8z"/></svg></div>
-        <p><strong style="display:block; color:var(--olive); text-decoration:underline; text-decoration-color:var(--teal); text-underline-offset:4px; margin-bottom:6px;">Systems &amp; Software</strong>Every system gets documented and used to its full potential, so the business no longer depends on any one person to keep running.</p>
-      </div>
-      <div class="improve-item reveal">
-        <div class="improve-icon icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3 2.5-5.5 5-5.5S13 17 13 20"/><path d="M14.5 14.8c2 .2 3.5 2 3.5 4.2"/></svg></div>
-        <p><strong style="display:block; color:var(--olive); text-decoration:underline; text-decoration-color:var(--teal); text-underline-offset:4px; margin-bottom:6px;">Crews &amp; Communication</strong>Every crew delivers the same consistent service, and departments finally have clear lines of communication instead of guessing what the other one is doing.</p>
-      </div>
-      <div class="improve-item reveal">
-        <div class="improve-icon icon-olive" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 3 7-8"/><path d="M14 7h5v5"/></svg></div>
-        <p><strong style="display:block; color:var(--olive); text-decoration:underline; text-decoration-color:var(--teal); text-underline-offset:4px; margin-bottom:6px;">Sales &amp; Marketing</strong>Quoting gets simpler, quality upsells become a natural part of the conversation, and your Google Business presence gets stronger, with creative marketing ideas included at no extra cost.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="on-white section-glow glow-corner" style="padding-top:90px;">
-  <div class="wrap">
-    <div class="section-head reveal" style="margin-bottom:100px;">
+        <div class="section-head reveal" style="margin-bottom:100px; margin-top:100px;">
       <h2>The <span class="accent-underline">problem</span> is rarely the problem</h2>
-      <p style="text-align:center;"><span class="highlight-line">You can probably name at least one frustration that already costs more than fixing it would.</span></p>
     </div>
 
     <div class="diagnosis-grid reveal">
@@ -924,121 +851,178 @@
       </div>
     </div>
 
-    <div class="section-head reveal" style="margin-top:70px; margin-bottom:40px;">
-      <h2><span class="accent-underline">The Cost of Doing Nothing</span></h2>
-      <p style="text-align:center;"><span class="highlight-line">You can probably name at least one frustration that already costs more than fixing it would, and it's not getting cheaper the longer it sits.</span></p>
-    </div>
-    <ul class="frustration-grid reveal">
-      <li>Employees waste time on repetitive work and inefficient tasks.</li>
-      <li>Inquiries slip through when your website isn't optimized.</li>
-      <li>Revenue is left behind when high-profit services aren't offered.</li>
-      <li>Opportunities slip away when clients don't get a follow-up.</li>
-      <li>Growth creates a mountain of unnecessary daily stress.</li>
-    </ul>
+    
 
+  </div>
+
+</section>
+
+
+
+
+
+<section class="section-glow glow-corner" style="padding-top:50px; padding-bottom:90px; background:linear-gradient(160deg, #DCEEF5 0%, #D4EDE3 100%);">
+  <div class="wrap">
     <div class="answers-card reveal">
-      <h3 style="color:var(--teal-deep);">That's why I offer the free 15-Minute Business Answers Call.</h3>
-      <p>Most owners believe they have one problem. More often, the real issues are caused by hidden factors they hadn't even considered. Here's where we uncover them.</p>
-      <p style="font-weight:600; color:var(--olive-dark); font-family:'Raleway',sans-serif; font-size:18px; margin-bottom:0;"><span style="background:var(--teal-tint); padding:2px 6px 2px 0; border-radius:4px;">During our conversation, we'll discuss:</span></p>
+      <h3 style="color:var(--teal-deep);">That's why there's the free 15-Minute Business Answers Call.</h3>
+      <p style="font-size:18px;">Often, issues are caused by factors that hadn't been considered.</p>
+
+      <p style="font-weight:600; color:var(--olive-dark); font-family:'Raleway',sans-serif; font-size:18px; margin:24px 0 18px;"><span style="background:var(--teal-tint); padding:2px 6px 2px 0; border-radius:4px;">During our conversation, we'll discuss:</span></p>
       <ul class="answers-list dash">
         <li>What's creating the most stress.</li>
         <li>Where time is being wasted.</li>
         <li>Where profit is being lost.</li>
         <li>What opportunities you're missing.</li>
       </ul>
-      <p>You'll leave knowing exactly where the biggest opportunities for improvement are, and what deserves your attention first.</p>
+      <p style="font-size:18px; margin-top:24px;">You'll leave knowing exactly where the biggest opportunities for improvement are, and what deserves your attention first.</p>
 
       <div style="background:var(--olive-dark); border-radius:14px; padding:24px 26px; margin:26px 0;">
-        <strong style="display:block; font-family:'Raleway',sans-serif; color:#69D3B0; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:10px;">For the numbers-minded</strong>
-        <p style="color:#E4EBE0; font-size:16px; line-height:1.65; margin:0;">Across the individual services in this program, our starting targets include 10-30% less rework, 20-40% fewer handoff errors, 20-50% faster follow-up response, and 5-15% higher average job value. On a business doing a few million a year, even two or three of these compounding is real, countable margin, not just a smoother-feeling week.</p>
+        <strong style="display:block; font-family:'Raleway',sans-serif; color:#69D3B0; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:10px;">For the numbers-minded</strong>
+        <p style="color:#E4EBE0; font-size:16px; line-height:1.65; margin:0;">Starting targets include 10-30% less rework, 20-40% fewer handoff errors, 20-50% faster follow-up response, and 5-15% higher average job value. These are real, compoundable margins of profit.</p>
       </div>
 
       <div class="empathy-block">
-        <p><strong>Here's the truth:</strong> you already know something has to change. The stress doesn't go away on its own. Every month this continues, it compounds. The fires get bigger. Your best people get more burned out. Eventually something breaks that didn't have to.</p>
-        <p>I've been exactly where you are. Overloaded, reactive, holding it together on willpower. I would have paid almost anything for someone to just tell me the truth and help me fix it. That's what this call is.</p>
-        <p>This isn't for every business, and that's okay. It's for owners who are done running on fumes and ready for it to actually be different. If that's you, fifteen minutes from your car between jobs is nothing. There's no downside. The real risk is having this same conversation with yourself again next year.</p>
-        <p class="empathy-signoff">I'm not on the other side of this from you. I'm on your team, and I want you to win.</p>
+        <p><strong>Here's the truth:</strong> you already know something has to change. Most of us have been there: overloaded, reactive, and holding it together on willpower.</p>
+        <p class="empathy-signoff">This isn't for everyone. It's for businesses ready to take action.</p>
       </div>
-      <div style="text-align:center; margin-top:30px;">
-        <a class="btn btn-primary" href="https://calendly.com/thefieldwisegroup/15min" target="_blank" rel="noopener">Book Your Free 15-Min Answers Call</a>
-      </div>
-      <p class="pride-reframe">The strongest move here isn't toughing it out alone. It's making the call.</p>
-      <p class="answers-served">Typically serving established, growing trade and service businesses with $1M+ in annual revenue.</p>
-    </div>
 
+      <div style="text-align:center; margin-top:34px;">
+        <a class="btn btn-primary" data-cta-location="answers_section" href="https://calendly.com/thefieldwisegroup/15min" target="_blank" rel="noopener">Book Your Free 15-Min Answers Call</a>
+      </div>
+      <p class="answers-served">Typically serving established, growing trade and service businesses with $1M-$10M+ in annual revenue.</p>
+    </div>
   </div>
 </section>
+
+
+
+
+
+
+<section class="on-dark section-glow glow-light" style="padding-bottom:64px; padding-top:90px;">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom:40px; text-align:center;">
+      <h2 style="color:#69D3B0;">The Difference Fieldwise Makes</h2>
+    </div>
+    <div class="transform-grid reveal">
+      <div class="outcome-card">
+        <div class="outcome-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="0.8" fill="currentColor"/></svg></div>
+        <p>Employees know what success looks like.</p>
+      </div>
+      <div class="outcome-card">
+        <div class="outcome-icon accent-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 14.5-4.6M20 12a8 8 0 0 1-14.5 4.6"/><path d="M18.5 3.5v4h-4M5.5 20.5v-4h4"/></svg></div>
+        <p>Customers receive a dependable experience.</p>
+      </div>
+      <div class="outcome-card">
+        <div class="outcome-icon accent-olive" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.8"/></svg></div>
+        <p>Leadership has full visibility into daily operations.</p>
+      </div>
+      <div class="outcome-card">
+        <div class="outcome-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 3 7-8"/><path d="M14 7h5v5"/></svg></div>
+        <p>The business scales smoothly and profitably.</p>
+      </div>
+    </div>
+    <div class="unique-callout">
+      <p class="unique-callout-label">What Makes Us Unique</p>
+      <p class="unique-callout-text">We combine the efficiency of <strong>Lean Six Sigma</strong> with the behavior science of <strong>Industrial-Organizational (I-O) Psychology</strong>.</p>
+      <p class="unique-callout-text"><strong>In plain terms:</strong></p>
+      <p class="unique-callout-text">Lean Six Sigma cuts out wasted steps so work gets done faster with fewer mistakes.</p>
+      <p class="unique-callout-text">I-O Psychology is about understanding why people actually change their habits, so the better way of doing things sticks.</p>
+      <p class="unique-callout-example">A $4M business that trims a few unnecessary steps and makes changes people actually adopt can often see 2-4% in annual savings, which comes out to $80,000&ndash;$160,000. That's real money, not just a smoother week.</p>
+    </div>
+  </div>
+</section>
+
+
 
 <section class="on-tint" style="padding:64px 0;">
   <div class="wrap" style="text-align:center;">
-    <a class="btn btn-primary" href="https://calendly.com/thefieldwisegroup/15min" target="_blank" rel="noopener">Book Your Free 15-Min Answers Call</a>
+    <a class="btn btn-primary" data-cta-location="cta_strip" href="https://calendly.com/thefieldwisegroup/15min" target="_blank" rel="noopener">Book Your Free 15-Min Answers Call</a>
   </div>
 </section>
 
-<section id="services" class="on-teal section-glow glow-light" style="padding-top:72px; border-top:1px solid var(--line); overflow:hidden;">
+
+
+<section class="on-white section-glow glow-corner glow-dual-olive" style="padding-top:90px; padding-bottom:90px;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 style="color:var(--teal-deep);">Why Trust Fieldwise</h2>
+    </div>
+    <ul class="check-list on-light reveal">
+      <li>16+ years building and scaling businesses</li>
+      <li>Every engagement kept strictly confidential</li>
+      <li>Real operational experience, not just theory</li>
+    </ul>
+    <p style="text-align:left; max-width:600px; margin:32px auto 0; color:var(--olive); font-weight:700;">What happens inside your business stays inside your business. Nothing about your company is ever shared, published, or disclosed.</p>
+  </div>
+</section>
+
+
+
+<section id="services" class="on-teal section-glow glow-light" style="padding-top:72px; padding-bottom:80px; border-top:1px solid var(--line); overflow:hidden;">
   <div class="wrap">
     <div class="section-head reveal" style="margin-bottom:14px;">
       <h2 class="service-menu-title">Current Service Packages</h2>
-      <p style="text-align:center; max-width:560px; margin:10px auto 0; color:var(--ink-soft); font-size:18px;">These build on each other in order. Each step lays the groundwork for the next, so the sooner you start, the sooner it compounds.</p>
-      <p style="font-family:'Raleway',sans-serif; font-weight:700; font-size:17px; color:var(--ink-soft); margin-top:14px;">Sources are cited at the bottom of this section.</p>
+      <p style="text-align:left; max-width:560px; margin:10px 0 0; color:var(--olive); font-size:18px;">These build on each other in order. Each step lays the groundwork for the next, so the sooner you start, the sooner it compounds.</p>
+      <p style="text-align:left; font-family:'Raleway',sans-serif; font-weight:700; font-size:16px; color:var(--olive); margin-top:14px;">Sources are cited at the bottom of this section.</p>
     </div>
 
     <div class="quick-compare reveal">
       <a href="#step-1" class="quick-compare-card accent-mint">
         <span class="quick-compare-num">1</span>
         <span class="quick-compare-name">Immediate Answers Assessment</span>
-        <span class="quick-compare-price">$5,000&ndash;$8,500</span>
         <span class="quick-compare-time">Approximately 4 weeks</span>
       </a>
       <a href="#step-2" class="quick-compare-card accent-teal">
         <span class="quick-compare-num">2</span>
         <span class="quick-compare-name">90-Day Operations Overhaul</span>
-        <span class="quick-compare-price">$10,000&ndash;$20,000</span>
         <span class="quick-compare-time">90 days</span>
       </a>
       <a href="#step-3" class="quick-compare-card accent-olive">
         <span class="quick-compare-num">3</span>
         <span class="quick-compare-name">Ongoing Operations Leadership</span>
-        <span class="quick-compare-price">$3,500&ndash;$12,000/mo</span>
         <span class="quick-compare-time">Monthly</span>
       </a>
     </div>
-    <p class="quick-compare-caption">Tap a step to jump straight to its details, or scroll to see how each one builds on the last.</p>
 
-    <p class="service-menu-intro">Every service Fieldwise offers is broken out individually below each package. A package costs less than per service since the groundwork from each step carries into the next.</p>
-    <p class="service-menu-intro">If you decide a package makes more sense later, whatever you've already paid is credited toward it.</p>
+    <p class="service-menu-intro" style="margin-bottom:16px;"><strong>Every package Fieldwise offers is also available as an &agrave; la carte service.</strong></p>
+    <p class="service-menu-intro"><strong>However, a package provides the best value since the groundwork from each step carries into the next.</strong></p>
+    <p class="service-menu-intro">If you decide a package makes more sense later, whatever you've already paid will be credited toward it.</p>
 
     <div class="package-panel-track">
 <div class="package-panel accent-mint" id="step-1"><div class="package-panel-num">1</div><div class="package-panel-body">
 <div class="pricing-grid" id="pricing">
       <div class="plan reveal">
         <div class="plan-intro">
-        <div class="step-tag">Step 1 &middot; 4 Weeks</div>
-        <h3>Immediate Answers Assessment</h3>
-        <p class="plan-sub">For established businesses, legally structured, with the basics in place.</p>
-        <p style="font-size:18px; color:var(--ink-soft); margin-bottom:18px;">A thorough review of your business from the owner, team, and customer perspective.</p>
+        <h3>1. Immediate Answers Assessment</h3>
+        <p style="font-size:18px; color:var(--olive); margin-bottom:24px;">We conduct a thorough audit of your business from the perspective of the owner, team, and customer.</p>
+        <p style="font-size:18px; color:var(--olive); margin-bottom:18px;">You receive <em>every</em> service and asset found under &Agrave; La Carte.</p>
         </div>
         <div class="plan-details-label">What's included</div>
         <div class="plan-details">
-        <div class="think-box"><strong>Think of it this way</strong><p>You'll walk away with a clear, honest picture of what's working, what's not, and what to prioritize first. Most owners find that clarity alone changes how they run the business.</p></div>
         <ul class="includes">
-          <li>Quick wins</li>
-          <li>Biggest risks</li>
-          <li>Biggest opportunities</li>
-          <li>Longer-term improvements</li>
-          <li>Recommended priorities</li>
-          <li>Immediate actions</li>
+          <li>Owner priorities and leadership interview</li>
+          <li>Employee listening sessions</li>
+          <li>Workflow observation and mapping</li>
+          <li>Systems and software audit</li>
+          <li>Customer journey and follow-up audit</li>
+          <li>Operational baseline scorecard</li>
+          <li>Risk and opportunity register</li>
+          <li>90-day action roadmap</li>
         </ul>
+        <div class="think-box"><strong>Think of it this way</strong><p>Gaining clarity transforms stress into excitement and provides a roadmap to follow.</p></div>
         </div>
-        <div class="price">$5,000&ndash;$8,500</div>
-        <div class="price-note">Depending on company size and scope. Often less than the cost of a single pricing mistake or missed opportunity.</div>
         <div class="timeline">Approximately 4 weeks</div>
-        <a class="btn btn-primary btn-block" href="https://calendly.com/thefieldwisegroup/15min" target="_blank" rel="noopener">Start With the Answers Call</a>
+        <div class="price-note">Pricing depends on number of employees and locations. Less than the cost of a missed opportunity.</div>
+        <div class="package-panel-pricing-bottom">
+          <p>PACKAGE: $5,000&ndash;$8,500</p>
+          <p>&Agrave; LA CARTE TOTAL: $11,500</p>
+        </div>
       </div>
     </div>
     <div class="package-menu">
-      <div class="package-menu-head"><h3>1. Immediate Answers Assessment</h3><p>Package: $5,000-$8,500 | À la carte total: $11,500</p></div>
-      <div style="text-align:center; margin:20px 0;">
+      <div class="package-menu-head"><p class="ala-carte-label">WHAT YOU RECEIVE</p></div>
+      <div style="text-align:left; margin:20px 0;">
         <p class="expand-instruction">Click the <strong>+</strong> next to any service below to see full details, or expand everything at once:</p>
         <button type="button" class="expand-all-btn" data-group="pkg1" aria-pressed="false">Expand all</button>
       </div>
@@ -1065,16 +1049,13 @@
 <div class="package-panel accent-teal" id="step-2"><div class="package-panel-num">2</div><div class="package-panel-body">
 <div class="pricing-grid">
       <div class="plan featured reveal">
-        <span class="featured-ribbon">Most Popular</span>
         <div class="plan-intro">
-        <div class="step-tag">Step 2 &middot; 90 Days</div>
-        <h3>90-Day Operations Overhaul</h3>
-        <p class="plan-sub">Where real change happens.</p>
-        <p style="font-size:18px; color:var(--ink-soft); margin-bottom:18px;">Instead of being left to figure everything out yourself, implementation begins immediately with the highest-impact improvements.</p>
+        <h3>2. 90-Day Operations Overhaul</h3>
+        <p style="font-size:18px; color:var(--olive); margin-bottom:24px;">This is where real change happens. Implementation begins immediately, focusing on the highest-impact improvements first.</p>
+        <p style="font-size:18px; color:var(--olive); margin-bottom:18px;">You receive all services and assets found under &Agrave; La Carte.</p>
         </div>
         <div class="plan-details-label">What's included</div>
         <div class="plan-details">
-        <div class="think-box"><strong>Think of it this way</strong><p>You won't be left to carry the implementation on your own. The work continues past the assessment, building the lasting change your business needs.</p></div>
         <ul class="includes">
           <li>Weekly calls</li>
           <li>Direct personal support line</li>
@@ -1086,16 +1067,19 @@
           <li>Referral source improvements</li>
           <li>Business review strategy</li>
         </ul>
+        <div class="think-box"><strong>Think of it this way</strong><p>You won't be left to carry the implementation on your own.</p></div>
         </div>
-        <div class="price">$10,000&ndash;$20,000</div>
-        <div class="price-note">Depending on company size and scope. Less than the cost of one additional employee for three months.</div>
         <div class="timeline">90 days</div>
-        <a class="btn btn-primary btn-block" href="https://calendly.com/thefieldwisegroup/15min" target="_blank" rel="noopener">Talk Through the 90-Day Plan</a>
+        <div class="price-note">Pricing depends on number of employees and locations. Less than the cost of one additional employee for three months.</div>
+        <div class="package-panel-pricing-bottom">
+          <p>PACKAGE: $10,000&ndash;$20,000</p>
+          <p>&Agrave; LA CARTE TOTAL: $27,000</p>
+        </div>
       </div>
     </div>
     <div class="package-menu">
-      <div class="package-menu-head"><h3>2. 90-Day Operations Overhaul</h3><p>Package: $10,000-$20,000 | À la carte total: $27,000</p></div>
-      <div style="text-align:center; margin:20px 0;">
+      <div class="package-menu-head"><p class="ala-carte-label">WHAT YOU RECEIVE</p></div>
+      <div style="text-align:left; margin:20px 0;">
         <p class="expand-instruction">Click the <strong>+</strong> next to any service below to see full details, or expand everything at once:</p>
         <button type="button" class="expand-all-btn" data-group="pkg2" aria-pressed="false">Expand all</button>
       </div>
@@ -1129,29 +1113,36 @@
 <div class="pricing-grid">
       <div class="plan reveal">
         <div class="plan-intro">
-        <div class="step-tag">Step 3 &middot; Monthly</div>
-        <h3>Ongoing Operations Leadership</h3>
-        <p class="plan-sub">Focus on growing your business while having a trusted partner who already understands your company.</p>
+        <h3>3. Ongoing Operations Leadership</h3>
+        <p style="font-size:18px; color:var(--olive); margin-bottom:24px;">Grow your business with total peace of mind, backed by a trusted partner who already understands your company.</p>
+        <p style="font-size:18px; color:var(--olive); margin-bottom:18px;">You receive all services and assets found under &Agrave; La Carte.</p>
         <div class="prereq">Available once your 90-Day Overhaul is complete.</div>
         </div>
         <div class="plan-details-label">What's included</div>
         <div class="plan-details">
-        <div class="think-box"><strong>Think of it this way</strong><p>As your business grows, what it needs from you changes too. Having someone who already understands your business means improvements can continue without starting over each time something new comes up.</p></div>
         <ul class="includes">
-          <li>Move forward with confidence, clarity, and consistency</li>
-          <li>Automation &amp; AI options evaluated as your business grows</li>
-          <li>For owners beginning to think about their eventual exit, this is also where that conversation naturally starts</li>
+          <li>Monthly operating review</li>
+          <li>Continuous process improvement</li>
+          <li>SOP governance and cross-training</li>
+          <li>Leadership accountability and team development</li>
+          <li>Automation and AI evaluation</li>
+          <li>Growth and capacity planning</li>
+          <li>CRM and customer retention management</li>
+          <li>Owner-independence and exit readiness</li>
         </ul>
+        <div class="think-box"><strong>Think of it this way</strong><p>Having someone who already understands your business means improvements can continue without starting over each time something new comes up.</p></div>
         </div>
-        <div class="price small">$3,500&ndash;$12,000<span style="font-size:0.65em; font-weight:600;">/mo</span></div>
-        <div class="price-note">Depending on company size and scope of work, from managing the day-to-day to monthly leadership meetings. Often less than the cost of a part-time operations hire.</div>
         <div class="timeline">Monthly</div>
-        <a class="btn btn-primary btn-block" href="https://calendly.com/thefieldwisegroup/15min" target="_blank" rel="noopener">Ask About Ongoing Support</a>
+        <div class="price-note">Depending on company size and scope of work, from managing the day-to-day to monthly leadership meetings. Often less than the cost of a part-time operations hire.</div>
+        <div class="package-panel-pricing-bottom">
+          <p>PACKAGE: $3,500&ndash;$12,000/mo</p>
+          <p>&Agrave; LA CARTE TOTAL: $16,000/mo</p>
+        </div>
       </div>
     </div>
     <div class="package-menu">
-      <div class="package-menu-head"><h3>3. Ongoing Operations Leadership</h3><p>Package: $3,500-$12,000/mo | À la carte total: $16,000/mo</p></div>
-      <div style="text-align:center; margin:20px 0;">
+      <div class="package-menu-head"><p class="ala-carte-label">WHAT YOU RECEIVE</p></div>
+      <div style="text-align:left; margin:20px 0;">
         <p class="expand-instruction">Click the <strong>+</strong> next to any service below to see full details, or expand everything at once:</p>
         <button type="button" class="expand-all-btn" data-group="pkg3" aria-pressed="false">Expand all</button>
       </div>
@@ -1192,21 +1183,47 @@
   </div>
 </section>
 
-<section id="faq" class="section-glow glow-light" style="padding-bottom:48px;">
+
+
+<section class="on-white section-glow glow-light glow-corner" id="about" style="padding-top:90px; padding-bottom:90px;">
+  <div class="wrap about-wrap">
+    <div class="about-box reveal">
+      <div class="section-head" style="margin-bottom:24px;"><h2>About <span class="accent-underline">Fieldwise</span></h2></div>
+      <p>When you're in the middle of running a business, it's difficult to step back and see what's really slowing things down. The problems become familiar. The workarounds become routine. Before long, reacting every day starts to feel normal, and normal is exactly what makes it easy to put off fixing. I know, because I've lived it myself, not just watched other people live it.</p>
+      <p>I started Fieldwise because I kept seeing the same pattern. As businesses add locations, crews, or customers, they naturally outgrow the informal systems that got them there. Stronger systems aren't a sign something's broken, they're what keeps a growing business running well.</p>
+      <p>I've spent more than 16 years building businesses and helping other owners build theirs, including founding and scaling a national business and a network of partners and vendors across the country. That experience means understanding how businesses actually function, not just in theory, but in the day-to-day work of leading teams, managing partnerships, and growing at scale.</p>
+      <p><span style="background:var(--teal-tint); padding:2px 6px 2px 0; border-radius:4px; font-weight:600;">Today, Fieldwise specializes in trade and service businesses to strengthen the operations behind the work they do best.</span> Every engagement follows the same root-cause thinking large manufacturers use to fix problems for good, adapted for a business your size: find what's actually broken, fix it so it stays fixed, and build it in a way your crew will actually use.</p>
+      <p>A lot of the businesses I work with aren't just businesses. They're family operations, a spouse doing the books at the kitchen table, kids who grew up riding along in the truck. That changes what's actually at stake in getting this right, and I take that seriously.</p>
+      <p>I believe every person, regardless of their role, should be empowered to work at the top of their abilities. I don't believe in micromanaging. I believe in clear expectations, practical support, and giving people the opportunity to succeed.</p>
+      <p>Your business is one of a kind, built by you, shaped by your people, and run in a way that's entirely your own. That's exactly where I start, and it's why what we build together will always be about your business, not a formula.</p>
+      <p class="about-signoff"><img src="assets/fieldwise-icon.svg" alt="" class="about-icon">Carly Cylinder, Founder</p>
+      <p class="about-linkedin"><a href="https://www.linkedin.com/in/carly-cylinder/" target="_blank" rel="noopener">Connect on LinkedIn</a></p>
+    </div>
+    <div class="name-meaning reveal">
+      <h3 style="text-align:center;">Where the name comes from</h3>
+      <p><strong>Field</strong> is expansive. It's the wide-open space where skilled trade and service work actually happens, out in the world, not behind a desk.</p>
+      <p><strong>Wise</strong> means moving forward smarter, not just harder. It's also my maternal grandmother's maiden name, carried forward in this business the same way I hope to help carry your business forward.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="faq" class="section-glow glow-light" style="padding-top:90px; padding-bottom:48px;">
   <div class="wrap">
-    <div class="section-head reveal"><h2>Frequently asked questions</h2><p style="color:var(--ink-soft); font-size:15px; margin-top:10px;">Click any question below to expand the answer.</p></div>
+    <div class="section-head reveal"><h2>Frequently asked questions</h2><p style="color:var(--olive); font-size:16px; margin-top:10px;">Click any question below to expand the answer.</p></div>
     <div class="faq reveal">
       <details>
         <summary>Do I need new software?</summary>
-        <p>Probably not. Most businesses already have more software than they need. The issue is usually execution, consistency, communication, or visibility. I'll first determine how to make what you already have work better before recommending anything new.</p>
+        <p>Probably not. Most businesses already have more software than they need. The issue is usually execution, consistency, communication, or visibility. The first step is determining how to make what you already have work better before recommending anything new.</p>
       </details>
       <details>
         <summary>Will you implement AI?</summary>
-        <p>Only if it genuinely makes your business easier to operate. AI isn't the starting point. I first focus on creating lasting behavioral change, accountability, and consistency in how things get done. Then I'll determine where technology can genuinely save time.</p>
+        <p>Only if it genuinely makes your business easier to operate. AI isn't the starting point. The focus starts with creating lasting behavioral change, accountability, and consistency in how things get done. From there, technology gets evaluated for where it can genuinely save time.</p>
       </details>
       <details>
         <summary>What types of businesses do you work with?</summary>
-        <p>Established trade and service businesses, typically $1M+ in annual revenue, where growth is accelerating and complexity is increasing. That often looks like communication becoming more difficult, consistency getting harder to maintain across crews or locations, or leadership wanting greater visibility before small issues become expensive ones.</p>
+        <p>Established trade and service businesses, typically $1M-$10M+ in annual revenue, where growth is accelerating and complexity is increasing. That often looks like communication becoming more difficult, consistency getting harder to maintain across crews or locations, or leadership wanting greater visibility before small issues become expensive ones.</p>
       </details>
       <details>
         <summary>How quickly will I see improvements?</summary>
@@ -1220,29 +1237,99 @@
   </div>
 </section>
 
-<section class="on-tint section-glow">
-  <div class="wrap reveal">
-    <div class="final-card">
-      <h2 style="font-size:clamp(30px,3.8vw,42px); font-weight:800; margin-bottom:30px; text-align:center;">You built this company to create freedom.</h2>
-      <p class="lead" style="text-align:center;">You didn't start this business to spend every day putting out fires. The longer that continues, the harder it gets to reverse.</p>
-      <div class="badge-row badge-row-wide" style="margin-top:34px;">
-        <span class="badge"><span class="badge-check">✓</span> Done-For-You Implementation</span>
-        <span class="badge"><span class="badge-check">✓</span> Built for Busy Owners</span>
-        <span class="badge"><span class="badge-check">✓</span> No Endless Strategy Meetings</span>
+
+
+
+
+
+<section class="on-dark section-glow glow-dual" style="padding-top:90px; padding-bottom:90px;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 style="color:#69D3B0;">Our Approach</h2>
+      <p style="text-align:left; max-width:640px; margin:14px 0 0; color:#C7D4C4; font-size:18px;">Five steps, every engagement, whether the fix takes a week or three months. This isn't a report or a strategy session. It's direct, hands-on implementation.</p>
+    </div>
+    <div class="approach-grid reveal">
+      <div class="approach-item">
+        <div class="approach-num">1</div>
+        <h3>Observe</h3>
+        <p>Real time watching how work actually happens, not just how it's described on paper.</p>
       </div>
-      <p class="answers-note" style="margin-top:26px;">Not every owner is ready for this, and that's fine. If you are, this is a straight conversation, not a pitch.</p>
-      <div style="text-align:center; margin-top:38px;">
-        <a class="btn btn-primary" href="https://calendly.com/thefieldwisegroup/15min" target="_blank" rel="noopener">Book Your Free 15-Min Answers Call</a>
+      <div class="approach-item">
+        <div class="approach-num">2</div>
+        <h3>Measure</h3>
+        <p>Pulled from existing workflows to see where time, money, and consistency are being lost.</p>
       </div>
-      <p style="text-align:center; margin-top:28px; font-weight:700; color:var(--olive); font-size:16px;">Nothing changes until you make the call. That part's on you. We'll take it from there.</p>
+      <div class="approach-item">
+        <div class="approach-num">3</div>
+        <h3>Diagnose the Root Cause</h3>
+        <p>The underlying process gets fixed, not just the visible symptom.</p>
+      </div>
+      <div class="approach-item">
+        <div class="approach-num">4</div>
+        <h3>Implement</h3>
+        <p>Real systems and accountability built into daily operations, not ideas on a whiteboard.</p>
+      </div>
+      <div class="approach-item">
+        <div class="approach-num">5</div>
+        <h3>Sustain the Change</h3>
+        <p>Building buy-in and following up over time so it holds after the engagement ends.</p>
+      </div>
     </div>
   </div>
 </section>
 
+
+
+
+<section class="on-white section-glow glow-corner glow-dual" style="padding-top:90px; padding-bottom:90px;">
+  <div class="wrap">
+    <div class="method-block reveal">
+      <div class="change-stick-box">
+        <h3><span class="accent-underline">Making Change Last</span></h3>
+        <p class="change-single-line">The best kind of systems are the ones actually used.</p>
+        <div class="change-points">
+          <div class="change-point">
+            <div class="change-point-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.5"/></svg></div>
+            <p><strong>Clear purpose</strong>Everyone understands why the change matters, not just what to do.</p>
+          </div>
+          <div class="change-point">
+            <div class="change-point-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></div>
+            <p><strong>Early wins</strong>Small, visible results build momentum fast.</p>
+          </div>
+          <div class="change-point">
+            <div class="change-point-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg></div>
+            <p><strong>Real ownership</strong>The team adopts it because it's genuinely theirs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="on-tint section-glow" style="padding-top:90px; padding-bottom:90px;">
+  <div class="wrap reveal">
+    <div class="final-card">
+      <h2 style="font-size:clamp(30px,3.8vw,42px); font-weight:800; margin-bottom:30px; text-align:center;">You built this company to create freedom.</h2>
+      <p class="lead" style="text-align:left;">You didn't start this business to spend every day putting out fires. The longer that continues, the harder it gets to reverse.</p>
+      <p style="text-align:left; font-weight:700; color:var(--olive-dark); font-size:18px; margin-top:34px;">Done-for-you implementation. Built for busy owners. No endless strategy meetings.</p>
+      <div style="text-align:center; margin-top:38px;">
+        <a class="btn btn-primary" data-cta-location="final_cta" href="https://calendly.com/thefieldwisegroup/15min" target="_blank" rel="noopener">Book Your Free 15-Min Answers Call</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 </main>
 
 <div class="served-line">
-  Typically serving established, growing trade and service businesses generating $1M in annual revenue.
+  Typically serving established, growing trade and service businesses generating $1M-$10M+ in annual revenue.
 </div>
 
 <footer>
@@ -1253,7 +1340,7 @@
       <p class="foot-text">Business operations for established, growing trade and service companies.</p>
     </div>
     <div>
-      <h4>Contact</h4>
+      <h3>Contact</h3>
       <ul>
         <li><a href="mailto:hello@thefieldwisegroup.com">hello@thefieldwisegroup.com</a></li>
         <li class="foot-address">1585 Mallory Ln Suite 104<br>Brentwood, TN 37027-3036</li>
@@ -1261,7 +1348,7 @@
       </ul>
     </div>
     <div>
-      <h4>Quick Links</h4>
+      <h3>Quick Links</h3>
       <ul>
         <li><a href="#services">Services</a></li>
         <li><a href="#pricing">Pricing</a></li>
@@ -1277,6 +1364,14 @@
 </footer>
 
 <script>
+  document.querySelectorAll('[data-cta-location]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'book_call_click', { button_location: btn.getAttribute('data-cta-location') });
+      }
+    });
+  });
+
   var header = document.getElementById('site-header');
   var menuToggle = document.getElementById('menuToggle');
   var mobileMenu = document.getElementById('mobileMenu');
