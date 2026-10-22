@@ -183,6 +183,40 @@
   .mobile-menu a:last-child { border-bottom:none; }
   .mobile-menu a:hover, .mobile-menu a:active { color:var(--olive-dark); }
 
+
+  /* ===== Trade Up banner (covers hero) ===== */
+  .fw-banner { position:absolute; inset:0; z-index:10; display:flex; align-items:center; justify-content:center; overflow:hidden; padding:70px 24px 40px; background:linear-gradient(160deg, var(--olive-dark) 0%, #0F1A00 100%); transition:opacity .45s ease, transform .45s ease, visibility .45s; }
+  .fw-banner.is-closing { opacity:0; transform:translateY(-14px); visibility:hidden; pointer-events:none; }
+  .fw-banner[hidden] { display:none; }
+  .fw-banner::before { content:""; position:absolute; top:-20%; left:-8%; width:50%; aspect-ratio:1.5/1; background:radial-gradient(ellipse at center, rgba(105,211,176,0.55) 0%, rgba(105,211,176,0.22) 45%, transparent 72%); z-index:0; pointer-events:none; animation:blob-breathe 8s ease-in-out infinite; }
+  .fw-banner::after { content:""; position:absolute; bottom:-30%; right:-10%; width:46%; aspect-ratio:1.3/1; background:radial-gradient(ellipse at center, rgba(91,195,247,0.34) 0%, rgba(91,195,247,0.14) 45%, transparent 72%); z-index:0; pointer-events:none; animation:blob-breathe 9s ease-in-out infinite reverse; }
+  .fw-banner-inner { position:relative; z-index:1; max-width:1000px; display:flex; align-items:center; justify-content:center; gap:44px; text-align:left; }
+  .fw-banner-close { position:absolute; top:18px; right:18px; z-index:2; width:44px; height:44px; border-radius:50%; border:1px solid rgba(105,211,176,0.45); background:rgba(255,255,255,0.06); color:#69D3B0; cursor:pointer; display:flex; align-items:center; justify-content:center; padding:0; transition:background .2s ease, color .2s ease, transform .2s ease; }
+  .fw-banner-close:hover { background:#69D3B0; color:var(--olive-dark); transform:rotate(90deg); }
+  .fw-banner-close svg { width:18px; height:18px; display:block; }
+  .fw-seal { --wax:#2F8FC9; --wax-dark:#1B6797; flex:0 0 auto; width:190px; height:190px; transform:rotate(-9deg); filter:drop-shadow(0 8px 14px rgba(0,0,0,0.5)); transition:transform .35s cubic-bezier(.3,1.6,.5,1); }
+  .fw-seal:hover { transform:rotate(-2deg) scale(1.06); }
+  .fw-seal .wax { fill:var(--wax); }
+  .fw-seal .wax-shade { fill:var(--wax-dark); }
+  .fw-seal .ring { fill:none; stroke:rgba(255,255,255,0.35); stroke-width:1; }
+  .fw-seal text { font-family:'Raleway',sans-serif; font-weight:800; font-size:10.5px; letter-spacing:2.2px; fill:#E6F5FD; }
+  .fw-seal .arm { fill:#E6F5FD; }
+  .fw-seal .cuff { fill:#9BD3F2; }
+  .fw-seal .rocket-art .line { fill:none; stroke:#9BD3F2; stroke-width:3; stroke-linecap:round; }
+  .fw-seal .rocket-art .thin { stroke-width:2.2; }
+  .fw-seal .jewel { fill:var(--wax-dark); }
+  .fw-banner-text { min-width:0; }
+  .fw-banner-title { font-size:clamp(34px,5.4vw,64px); font-weight:800; line-height:1.08; letter-spacing:-0.02em; color:var(--white); margin:0 0 10px; }
+  .fw-banner-title sup { font-size:0.38em; font-weight:700; vertical-align:super; margin-left:2px; color:#69D3B0; }
+  .fw-banner-tagline { font-size:clamp(18px,2.2vw,24px); font-weight:600; font-style:italic; line-height:1.4; color:#69D3B0; margin:0 0 16px; }
+  .fw-banner-legal { font-size:14px; font-weight:500; line-height:1.5; color:#D4D4D4; margin:0; }
+  @media (max-width:760px){
+    .fw-banner { padding:70px 18px 40px; }
+    .fw-banner-inner { flex-direction:column; gap:18px; text-align:center; }
+    .fw-seal { width:140px; height:140px; }
+  }
+  @media (prefers-reduced-motion: reduce){ .fw-banner::before, .fw-banner::after { animation:none; } .fw-seal, .fw-banner, .fw-banner-close { transition:none; } }
+
   .hero {
     position:relative; overflow:hidden;
     padding:120px 0 0;
@@ -438,7 +472,7 @@
     .service-summary-price { margin-left:0; }
   }
   @media print {
-    header, footer, .btn, .mobile-menu { display:none !important; }
+    header, footer, .btn, .mobile-menu, .fw-banner { display:none !important; }
     .service-option { break-inside:avoid; }
     .service-option summary::before { display:none; }
     .service-card { display:flex !important; }
@@ -629,6 +663,28 @@
 <main>
 
 <section class="hero" id="top">
+  <div class="fw-banner" id="fwBanner" role="region" aria-label="Trade Up Program">
+    <button type="button" class="fw-banner-close" id="fwBannerClose" aria-label="Close banner">
+      <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M3 3l12 12M15 3L3 15"/></svg>
+    </button>
+    <div class="fw-banner-inner">
+      <svg class="fw-seal" viewBox="0 0 120 120" role="img" aria-label="Home of the original">
+        <defs><path id="fwSealArc" d="M60,60 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0"/></defs>
+        <path class="wax" d="M117.0,60.0 Q110.2,68.9 111.9,74.2 Q113.6,79.5 108.9,82.5 Q104.2,85.5 103.9,91.1 Q103.7,96.6 98.2,97.9 Q92.8,99.1 90.6,104.2 Q88.5,109.4 83.0,108.6 Q77.4,107.9 73.7,112.0 Q69.9,116.1 64.9,113.6 Q60.0,111.0 55.1,113.6 Q50.1,116.1 46.3,112.0 Q42.6,107.9 37.0,108.6 Q31.5,109.4 29.4,104.2 Q27.2,99.1 21.8,97.9 Q16.3,96.6 16.1,91.1 Q15.8,85.5 11.1,82.5 Q6.4,79.5 8.1,74.2 Q9.8,68.9 6.4,64.4 Q3.0,60.0 6.4,55.6 Q9.8,51.1 8.1,45.8 Q6.4,40.5 11.1,37.5 Q15.8,34.5 16.1,28.9 Q16.3,23.4 21.8,22.1 Q27.2,20.9 29.4,15.8 Q31.5,10.6 37.0,11.4 Q42.6,12.1 46.3,8.0 Q50.1,3.9 55.1,6.4 Q60.0,9.0 64.9,6.4 Q69.9,3.9 73.7,8.0 Q77.4,12.1 83.0,11.4 Q88.5,10.6 90.6,15.8 Q92.8,20.9 98.2,22.1 Q103.7,23.4 103.9,28.9 Q104.2,34.5 108.9,37.5 Q113.6,40.5 111.9,45.8 Q110.2,51.1 113.6,55.6 Q117.0,60.0 113.6,64.4 Z"/>
+        <circle class="wax-shade" cx="60" cy="60" r="46"/>
+        <circle class="wax" cx="60" cy="60" r="43"/>
+        <circle class="ring" cx="60" cy="60" r="41"/>
+        <circle class="ring" cx="60" cy="60" r="29"/>
+        <text><textPath href="#fwSealArc" startOffset="0" textLength="226" lengthAdjust="spacing">&#9670; HOME OF THE ORIGINAL &#9670;</textPath></text>
+        <g transform="translate(31,29) scale(0.56)"><g class="rocket-art"><path class="cuff" d="M50,60 C60,70 58,84 50,96 C42,84 40,70 50,60 Z"/><path class="arm" d="M50,64 C55,71 54,79 50,86 C46,79 45,71 50,64 Z"/><path class="line thin" d="M28,72 L28,86"/><path class="line thin" d="M72,72 L72,86"/><path class="line thin" d="M38,78 L38,92"/><path class="line thin" d="M62,78 L62,92"/><polygon class="arm" stroke="#E6F5FD" stroke-width="2.5" stroke-linejoin="round" points="50.0,7.0 54.0,18.5 66.2,18.7 56.5,26.1 60.0,37.8 50.0,30.8 40.0,37.8 43.5,26.1 33.8,18.7 46.0,18.5"/><polygon class="arm" stroke="#E6F5FD" stroke-width="2.5" stroke-linejoin="round" points="27.0,45.0 30.1,53.8 39.4,54.0 31.9,59.6 34.6,68.5 27.0,63.2 19.4,68.5 22.1,59.6 14.6,54.0 23.9,53.8"/><polygon class="arm" stroke="#E6F5FD" stroke-width="2.5" stroke-linejoin="round" points="73.0,45.0 76.1,53.8 85.4,54.0 77.9,59.6 80.6,68.5 73.0,63.2 65.4,68.5 68.1,59.6 60.6,54.0 69.9,53.8"/></g></g>
+      </svg>
+      <div class="fw-banner-text">
+        <h2 class="fw-banner-title">Trade Up<sup>&trade;</sup> Program</h2>
+        <p class="fw-banner-tagline">Empowering entrepreneurship in the skilled trades.</p>
+        <p class="fw-banner-legal">&copy; 2026 The Fieldwise Group LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
   <div class="wrap">
     <h1 class="reveal">You've <span style="color:#69D3B0;">grown</span> the business.<span class="hero-subhead">But the business is relying on you too much.</span></h1>
     <div class="hero-rule reveal"></div>
@@ -1392,6 +1448,17 @@
     if (window.scrollY > 12) { header.classList.add('scrolled'); }
     else { header.classList.remove('scrolled'); }
   });
+
+
+  (function () {
+    var banner = document.getElementById('fwBanner');
+    var closeBtn = document.getElementById('fwBannerClose');
+    if (!banner || !closeBtn) return;
+    closeBtn.addEventListener('click', function () {
+      banner.classList.add('is-closing');
+      setTimeout(function () { banner.hidden = true; }, 480);
+    });
+  })();
 
   document.getElementById('year').textContent = new Date().getFullYear();
 
