@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" class="seal" width="600" height="600" viewBox="0 0 120 120" role="img" aria-label="Trade Up, The Fieldwise Group, Home of the Original">
+  <defs>
+    <path id="fwArcTop" d="M19,60 a41,41 0 1,1 82,0"/>
+    <path id="fwArcBottom" d="M14,60 a46,46 0 1,0 92,0"/>
+    <linearGradient id="sealScallopGrad" x1="18%" y1="12%" x2="82%" y2="92%">
+      <stop offset="0%" stop-color="#5BC3F7"/>
+      <stop offset="48%" stop-color="#2F8FC9"/>
+      <stop offset="100%" stop-color="#175A82"/>
+    </linearGradient>
+    <linearGradient id="sealRingGrad" x1="18%" y1="12%" x2="82%" y2="92%">
+      <stop offset="0%" stop-color="#0E3A54"/>
+      <stop offset="55%" stop-color="#1B6797"/>
+      <stop offset="100%" stop-color="#3A93C8"/>
+    </linearGradient>
+    <radialGradient id="sealFaceGrad" cx="34%" cy="28%" r="78%">
+      <stop offset="0%" stop-color="#63C0EF"/>
+      <stop offset="55%" stop-color="#2F8FC9"/>
+      <stop offset="100%" stop-color="#1B6797"/>
+    </radialGradient>
+    <filter id="sealShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="2.2" stdDeviation="2.3" flood-color="#000000" flood-opacity="0.38"/>
+    </filter>
+  </defs>
+  <g filter="url(#sealShadow)">
+  <path fill="url(#sealScallopGrad)" d="M117.0,60.0 Q110.2,68.9 111.9,74.2 Q113.6,79.5 108.9,82.5 Q104.2,85.5 103.9,91.1 Q103.7,96.6 98.2,97.9 Q92.8,99.1 90.6,104.2 Q88.5,109.4 83.0,108.6 Q77.4,107.9 73.7,112.0 Q69.9,116.1 64.9,113.6 Q60.0,111.0 55.1,113.6 Q50.1,116.1 46.3,112.0 Q42.6,107.9 37.0,108.6 Q31.5,109.4 29.4,104.2 Q27.2,99.1 21.8,97.9 Q16.3,96.6 16.1,91.1 Q15.8,85.5 11.1,82.5 Q6.4,79.5 8.1,74.2 Q9.8,68.9 6.4,64.4 Q3.0,60.0 6.4,55.6 Q9.8,51.1 8.1,45.8 Q6.4,40.5 11.1,37.5 Q15.8,34.5 16.1,28.9 Q16.3,23.4 21.8,22.1 Q27.2,20.9 29.4,15.8 Q31.5,10.6 37.0,11.4 Q42.6,12.1 46.3,8.0 Q50.1,3.9 55.1,6.4 Q60.0,9.0 64.9,6.4 Q69.9,3.9 73.7,8.0 Q77.4,12.1 83.0,11.4 Q88.5,10.6 90.6,15.8 Q92.8,20.9 98.2,22.1 Q103.7,23.4 103.9,28.9 Q104.2,34.5 108.9,37.5 Q113.6,40.5 111.9,45.8 Q110.2,51.1 113.6,55.6 Q117.0,60.0 113.6,64.4 Z"/>
+  <circle fill="url(#sealRingGrad)" cx="60" cy="60" r="46"/>
+  <circle fill="url(#sealFaceGrad)" cx="60" cy="60" r="43"/>
+  <ellipse cx="46" cy="36" rx="25" ry="13" fill="#FFFFFF" opacity="0.16" transform="rotate(-20 46 36)"/>
+  <circle fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1" cx="60" cy="60" r="41"/>
+  <circle fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1" cx="60" cy="60" r="27"/>
+  <g transform="translate(0.4,0.5)">
+    <text font-family="Raleway" font-weight="800" font-size="7px" letter-spacing="0.4px" fill="#0C3049" opacity="0.55"><textPath href="#fwArcTop" startOffset="19.52">HOME OF THE ORIGINAL</textPath></text>
+    <text font-family="Raleway" font-weight="800" font-size="7px" letter-spacing="0.4px" fill="#0C3049" opacity="0.55"><textPath href="#fwArcBottom" startOffset="7.46">TRADE UP &#183; THE FIELDWISE GROUP</textPath></text>
+  </g>
+  <text font-family="Raleway" font-weight="800" font-size="7px" letter-spacing="0.4px" fill="#E6F5FD"><textPath href="#fwArcTop" startOffset="19.52">HOME OF THE ORIGINAL</textPath></text>
+  <text font-family="Raleway" font-weight="800" font-size="7px" letter-spacing="0.4px" fill="#E6F5FD"><textPath href="#fwArcBottom" startOffset="7.46">TRADE UP &#183; THE FIELDWISE GROUP</textPath></text>
+  <g transform="translate(38,34) scale(0.44)">
+    <path fill="#9BD3F2" d="M50,60 C60,70 58,84 50,96 C42,84 40,70 50,60 Z"/>
+    <path fill="#E6F5FD" d="M50,64 C55,71 54,79 50,86 C46,79 45,71 50,64 Z"/>
+    <path fill="none" stroke="#9BD3F2" stroke-width="2.2" stroke-linecap="round" d="M28,72 L28,86"/>
+    <path fill="none" stroke="#9BD3F2" stroke-width="2.2" stroke-linecap="round" d="M72,72 L72,86"/>
+    <path fill="none" stroke="#9BD3F2" stroke-width="2.2" stroke-linecap="round" d="M38,78 L38,92"/>
+    <path fill="none" stroke="#9BD3F2" stroke-width="2.2" stroke-linecap="round" d="M62,78 L62,92"/>
+    <polygon fill="#E6F5FD" stroke="#E6F5FD" stroke-width="2.5" stroke-linejoin="round" points="50.0,7.0 54.0,18.5 66.2,18.7 56.5,26.1 60.0,37.8 50.0,30.8 40.0,37.8 43.5,26.1 33.8,18.7 46.0,18.5"/>
+    <polygon fill="#E6F5FD" stroke="#E6F5FD" stroke-width="2.5" stroke-linejoin="round" points="27.0,45.0 30.1,53.8 39.4,54.0 31.9,59.6 34.6,68.5 27.0,63.2 19.4,68.5 22.1,59.6 14.6,54.0 23.9,53.8"/>
+    <polygon fill="#E6F5FD" stroke="#E6F5FD" stroke-width="2.5" stroke-linejoin="round" points="73.0,45.0 76.1,53.8 85.4,54.0 77.9,59.6 80.6,68.5 73.0,63.2 65.4,68.5 68.1,59.6 60.6,54.0 69.9,53.8"/>
+  </g>
+  </g>
+</svg>
